@@ -1,0 +1,2192 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>91酒色 - 品牌视频门户,醇香生活影像社区</title>
+<meta name="description" content="91酒色官方网站，专注酒类文化与生活方式的高清视频品牌门户，汇聚原创精品内容、创作者社区与品牌故事，打造值得信赖的酒色内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1220'/%3E%3Ccircle cx='26' cy='34' r='12' fill='%23e0a13a'/%3E%3Ccircle cx='40' cy='34' r='12' fill='%23b8517a' opacity='0.85'/%3E%3Cpath d='M32 12l4 10h-8z' fill='%23f2d9a0'/%3E%3C/svg%3E">
+<style>
+:root{
+  --jj-ink:#1a1220;
+  --jj-ink-2:#261a30;
+  --jj-plum:#4a2340;
+  --jj-amber:#e0a13a;
+  --jj-amber-soft:#f2d9a0;
+  --jj-rose:#b8517a;
+  --jj-paper:#faf5ef;
+  --jj-paper-2:#f3e9dd;
+  --jj-line:#e5d6c4;
+  --jj-text:#2b2028;
+  --jj-muted:#7c6b74;
+  --jj-radius:18px;
+  --jj-shadow:0 14px 40px rgba(26,18,32,.13);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--jj-paper);
+  color:var(--jj-text);
+  line-height:1.75;
+  font-size:16px;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul,ol{list-style:none}
+.jj-wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 22px}
+
+/* ---------- 吸顶公告 + 页头 ---------- */
+.jj-sticky-head{position:sticky;top:0;z-index:120}
+.jj-notice{
+  background:linear-gradient(90deg,var(--jj-ink),var(--jj-plum) 55%,var(--jj-rose));
+  color:#fbe9d2;
+  font-size:13.5px;
+  letter-spacing:.02em;
+  display:flex;align-items:center;justify-content:center;
+  gap:10px;
+  padding:7px 46px 7px 22px;
+  position:relative;
+  overflow:hidden;
+}
+.jj-notice-tag{
+  background:var(--jj-amber);color:#2b1a08;font-weight:700;
+  font-size:11.5px;padding:1px 8px;border-radius:20px;letter-spacing:.08em;flex:none;
+}
+.jj-notice-track{display:flex;gap:38px;white-space:nowrap;animation:jj-marquee 26s linear infinite}
+.jj-notice-track span{flex:none}
+@keyframes jj-marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.jj-notice-close{
+  position:absolute;right:10px;top:50%;transform:translateY(-50%);
+  width:24px;height:24px;border-radius:50%;background:rgba(255,255,255,.14);
+  color:#fbe9d2;font-size:14px;line-height:24px;text-align:center;flex:none;
+}
+.jj-header{
+  background:rgba(250,245,239,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--jj-line);
+}
+.jj-header-inner{
+  display:flex;align-items:center;gap:26px;height:68px;
+}
+.jj-logo{display:flex;align-items:center;gap:10px;flex:none}
+.jj-logo-mark{
+  width:38px;height:38px;border-radius:12px;
+  background:linear-gradient(135deg,var(--jj-amber),var(--jj-rose));
+  display:grid;place-items:center;color:#fff;font-weight:800;font-size:17px;
+  box-shadow:0 6px 18px rgba(184,81,122,.35);
+}
+.jj-logo-text{display:flex;flex-direction:column;line-height:1.15}
+.jj-logo-text b{font-size:19px;letter-spacing:.06em;color:var(--jj-ink)}
+.jj-logo-text small{font-size:10.5px;color:var(--jj-muted);letter-spacing:.22em}
+.jj-nav{display:flex;gap:4px;margin-left:6px;flex:1;flex-wrap:wrap}
+.jj-nav a{
+  font-size:14.5px;padding:8px 12px;border-radius:10px;color:var(--jj-text);
+  transition:background .2s,color .2s;white-space:nowrap;
+}
+.jj-nav a:hover{background:var(--jj-paper-2);color:var(--jj-plum)}
+.jj-head-tools{display:flex;align-items:center;gap:12px;flex:none}
+.jj-search{
+  display:flex;align-items:center;gap:8px;
+  background:#fff;border:1px solid var(--jj-line);border-radius:30px;
+  padding:6px 8px 6px 14px;width:236px;transition:box-shadow .2s,border-color .2s;
+}
+.jj-search:focus-within{border-color:var(--jj-amber);box-shadow:0 0 0 4px rgba(224,161,58,.16)}
+.jj-search input{
+  border:none;outline:none;background:none;font-size:13.5px;width:100%;color:var(--jj-text);
+}
+.jj-search input::placeholder{color:#b9a8ad}
+.jj-search button{
+  background:var(--jj-ink);color:var(--jj-amber-soft);font-size:12.5px;
+  padding:5px 12px;border-radius:20px;flex:none;transition:background .2s;
+}
+.jj-search button:hover{background:var(--jj-plum)}
+.jj-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  font-size:14px;font-weight:600;padding:10px 22px;border-radius:30px;
+  transition:transform .18s,box-shadow .18s,background .18s;
+}
+.jj-btn:hover{transform:translateY(-2px)}
+.jj-btn--primary{background:linear-gradient(120deg,var(--jj-plum),var(--jj-rose));color:#fff;box-shadow:0 10px 24px rgba(74,35,64,.28)}
+.jj-btn--ghost{border:1.5px solid var(--jj-plum);color:var(--jj-plum);background:transparent}
+.jj-btn--amber{background:var(--jj-amber);color:#301d05;box-shadow:0 10px 24px rgba(224,161,58,.32)}
+.jj-btn--sm{padding:7px 16px;font-size:13px}
+.jj-burger{display:none;width:40px;height:40px;border-radius:12px;background:var(--jj-paper-2);flex-direction:column;justify-content:center;align-items:center;gap:4px}
+.jj-burger i{display:block;width:18px;height:2px;background:var(--jj-ink);border-radius:2px;transition:.25s}
+.jj-burger[aria-expanded="true"] i:nth-child(1){transform:translateY(6px) rotate(45deg)}
+.jj-burger[aria-expanded="true"] i:nth-child(2){opacity:0}
+.jj-burger[aria-expanded="true"] i:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
+
+/* 移动端抽屉 */
+.jj-mobile-nav{
+  display:none;background:var(--jj-paper);border-bottom:1px solid var(--jj-line);
+  padding:8px 22px 18px;
+}
+.jj-mobile-nav.open{display:block}
+.jj-mobile-nav a{display:block;padding:11px 6px;font-size:15px;border-bottom:1px dashed var(--jj-line)}
+.jj-mobile-nav .jj-search{width:100%;margin-top:12px}
+
+/* ---------- 通用 section ---------- */
+.jj-section{padding:72px 0}
+.jj-section--tight{padding:52px 0}
+.jj-section--dark{background:linear-gradient(160deg,var(--jj-ink),var(--jj-plum));color:#f4e8dc}
+.jj-section--dark .jj-muted{color:#c9b2bd}
+.jj-sec-head{margin-bottom:38px;max-width:760px}
+.jj-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;
+  letter-spacing:.2em;color:var(--jj-rose);text-transform:uppercase;margin-bottom:12px;
+}
+.jj-eyebrow::before{content:"";width:22px;height:2px;background:var(--jj-amber)}
+.jj-h2{font-size:clamp(23px,3vw,31px);line-height:1.35;letter-spacing:.01em;color:var(--jj-ink)}
+.jj-section--dark .jj-h2{color:#fff}
+.jj-sec-desc{margin-top:12px;color:var(--jj-muted);font-size:15px}
+.jj-section--dark .jj-sec-desc{color:#d3bcc6}
+.jj-h3{font-size:17.5px;line-height:1.5;color:var(--jj-ink);font-weight:700}
+.jj-muted{color:var(--jj-muted)}
+
+/* ---------- 首屏 ---------- */
+.jj-hero{position:relative;overflow:hidden;padding:64px 0 70px}
+.jj-hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(680px 420px at 82% 8%,rgba(224,161,58,.22),transparent 65%),
+    radial-gradient(560px 420px at 6% 92%,rgba(184,81,122,.18),transparent 62%);
+  pointer-events:none;
+}
+.jj-hero-grid{
+  position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center;
+}
+.jj-hero-badge{
+  display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--jj-line);
+  border-radius:30px;padding:6px 16px;font-size:12.5px;color:var(--jj-plum);font-weight:600;
+  box-shadow:0 8px 22px rgba(26,18,32,.07);margin-bottom:20px;
+}
+.jj-hero-badge span{width:7px;height:7px;border-radius:50%;background:var(--jj-rose);box-shadow:0 0 0 4px rgba(184,81,122,.18)}
+.jj-h1{
+  font-size:clamp(40px,6.4vw,66px);line-height:1.06;letter-spacing:.01em;color:var(--jj-ink);
+  font-weight:800;margin-bottom:6px;
+}
+.jj-h1 em{
+  font-style:normal;
+  background:linear-gradient(100deg,var(--jj-rose),var(--jj-amber));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.jj-hero-slogan{font-size:17px;font-weight:600;color:var(--jj-plum);margin-bottom:18px;letter-spacing:.04em}
+.jj-hero-intro{color:#4a3c45;font-size:15.5px;max-width:560px}
+.jj-hero-intro strong{color:var(--jj-plum)}
+.jj-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.jj-hero-stats{display:flex;flex-wrap:wrap;gap:34px;margin-top:36px;padding-top:26px;border-top:1px dashed var(--jj-line)}
+.jj-stat b{display:block;font-size:27px;color:var(--jj-plum);line-height:1.2;letter-spacing:.01em}
+.jj-stat span{font-size:12.5px;color:var(--jj-muted);letter-spacing:.05em}
+
+/* 首屏主视觉 */
+.jj-hero-visual{position:relative}
+.jj-hero-frame{
+  border-radius:26px;overflow:hidden;box-shadow:var(--jj-shadow);
+  border:1px solid rgba(255,255,255,.7);background:#fff;
+  transform:rotate(-1.2deg);
+}
+.jj-hero-frame svg{display:block;width:100%;height:auto}
+.jj-hero-float{
+  position:absolute;background:#fff;border-radius:16px;padding:12px 16px;
+  box-shadow:0 16px 38px rgba(26,18,32,.16);border:1px solid var(--jj-line);
+  font-size:13px;line-height:1.4;
+}
+.jj-hero-float b{display:block;color:var(--jj-plum);font-size:15px}
+.jj-hero-float--a{right:-10px;top:16px;animation:jj-bob 7s ease-in-out infinite}
+.jj-hero-float--b{left:-16px;bottom:20px;animation:jj-bob 8.4s ease-in-out infinite reverse}
+@keyframes jj-bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+
+/* ---------- 解读长文 ---------- */
+.jj-explore{background:#fff;border-top:1px solid var(--jj-line);border-bottom:1px solid var(--jj-line)}
+.jj-explore-grid{display:grid;grid-template-columns:290px 1fr;gap:46px;align-items:start}
+.jj-explore-aside{
+  position:sticky;top:150px;
+  background:linear-gradient(160deg,var(--jj-paper-2),#fff);
+  border:1px solid var(--jj-line);border-radius:var(--jj-radius);padding:26px 22px;
+}
+.jj-explore-aside h3{font-size:16px;color:var(--jj-plum);margin-bottom:14px;letter-spacing:.04em}
+.jj-explore-aside li{font-size:13.5px;color:var(--jj-muted);padding:8px 0;border-bottom:1px dashed var(--jj-line);display:flex;justify-content:space-between;gap:10px}
+.jj-explore-aside li:last-child{border-bottom:none}
+.jj-explore-aside li b{color:var(--jj-rose);font-weight:700}
+.jj-article p{margin-bottom:16px;font-size:15.3px;color:#40333c;text-align:justify}
+.jj-article h3{font-size:18px;color:var(--jj-ink);margin:26px 0 10px;padding-left:14px;border-left:4px solid var(--jj-amber)}
+.jj-article strong{color:var(--jj-plum)}
+
+/* ---------- 焦点视频 ---------- */
+.jj-feature-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:26px}
+.jj-feature-main{
+  background:#fff;border-radius:22px;overflow:hidden;border:1px solid var(--jj-line);
+  box-shadow:var(--jj-shadow);display:flex;flex-direction:column;
+}
+.jj-cover{position:relative;overflow:hidden;background:#d9c6b6}
+.jj-cover svg{display:block;width:100%;height:auto;transition:transform .5s ease}
+.jj-card:hover .jj-cover svg,.jj-feature-main:hover .jj-cover svg{transform:scale(1.04)}
+.jj-cover-tag{
+  position:absolute;left:14px;top:14px;background:rgba(26,18,32,.72);color:#f7e5c8;
+  font-size:11.5px;letter-spacing:.1em;padding:4px 11px;border-radius:20px;backdrop-filter:blur(4px);
+}
+.jj-cover-play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);
+  width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,.86);
+  display:grid;place-items:center;box-shadow:0 10px 26px rgba(26,18,32,.3);
+  transition:transform .2s,background .2s;
+}
+.jj-card:hover .jj-cover-play,.jj-feature-main:hover .jj-cover-play{transform:translate(-50%,-50%) scale(1.1);background:#fff}
+.jj-cover-play::after{content:"";display:block;margin-left:4px;border-style:solid;border-width:9px 0 9px 15px;border-color:transparent transparent transparent var(--jj-plum)}
+.jj-cover-dur{
+  position:absolute;right:12px;bottom:12px;background:rgba(26,18,32,.78);color:#f6ecd9;
+  font-size:11.5px;padding:2px 9px;border-radius:6px;letter-spacing:.04em;
+}
+.jj-feature-body{padding:22px 24px 24px;display:flex;flex-direction:column;flex:1}
+.jj-feature-body .jj-h3{font-size:22px;margin-bottom:10px}
+.jj-feature-body p{font-size:14.5px;color:var(--jj-muted);flex:1}
+.jj-meta{display:flex;flex-wrap:wrap;align-items:center;gap:14px;font-size:12.5px;color:var(--jj-muted);margin-top:14px}
+.jj-chip{
+  display:inline-block;font-size:11.5px;padding:2px 10px;border-radius:20px;
+  background:var(--jj-paper-2);color:var(--jj-plum);border:1px solid var(--jj-line);
+}
+.jj-feature-side{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.jj-mini{
+  background:#fff;border:1px solid var(--jj-line);border-radius:16px;overflow:hidden;
+  transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column;
+}
+.jj-mini:hover{transform:translateY(-5px);box-shadow:var(--jj-shadow)}
+.jj-mini .jj-cover-play{width:40px;height:40px}
+.jj-mini .jj-cover-play::after{border-width:7px 0 7px 11px}
+.jj-mini-body{padding:13px 14px 15px;flex:1;display:flex;flex-direction:column;gap:6px}
+.jj-mini-body h4{font-size:14.5px;line-height:1.45;color:var(--jj-ink);font-weight:700}
+.jj-mini-body p{font-size:12.5px;color:var(--jj-muted);flex:1}
+.jj-mini-meta{font-size:11.5px;color:#9c8a94;display:flex;justify-content:space-between;gap:8px}
+
+/* ---------- 视频卡片流 ---------- */
+.jj-filter{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:28px}
+.jj-filter button{
+  font-size:13px;padding:7px 17px;border-radius:30px;border:1px solid var(--jj-line);
+  background:#fff;color:var(--jj-text);transition:.2s;font-weight:500;
+}
+.jj-filter button.active{background:var(--jj-plum);color:#fff;border-color:var(--jj-plum);box-shadow:0 8px 18px rgba(74,35,64,.25)}
+.jj-card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.jj-card{
+  background:#fff;border:1px solid var(--jj-line);border-radius:18px;overflow:hidden;
+  display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s;
+}
+.jj-card:hover{transform:translateY(-6px);box-shadow:var(--jj-shadow)}
+.jj-card-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.jj-card-body h4{font-size:15.5px;line-height:1.5;color:var(--jj-ink);font-weight:700}
+.jj-card-body p{font-size:13px;color:var(--jj-muted);flex:1}
+.jj-card-foot{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding-top:10px;border-top:1px dashed var(--jj-line);font-size:12px;color:#9c8a94;
+}
+.jj-author-line{display:flex;align-items:center;gap:8px;min-width:0}
+.jj-ava{
+  width:28px;height:28px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-size:12px;font-weight:700;color:#fff;background:var(--jj-plum);overflow:hidden;
+}
+.jj-ava svg{width:100%;height:100%}
+.jj-author-line .jj-ava{width:24px;height:24px;font-size:11px}
+.jj-card-acts{display:flex;gap:4px;flex:none}
+.jj-act{
+  display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--jj-muted);
+  border-radius:8px;padding:4px 6px;transition:.2s;
+}
+.jj-act:hover{background:var(--jj-paper-2);color:var(--jj-plum)}
+.jj-act.on{color:var(--jj-rose);font-weight:700}
+.jj-act.on svg{fill:var(--jj-rose);stroke:var(--jj-rose)}
+.jj-act svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.8}
+
+/* ---------- 专题 ---------- */
+.jj-topic-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.jj-topic{
+  border-radius:18px;overflow:hidden;position:relative;min-height:230px;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:20px;color:#fff;border:1px solid rgba(255,255,255,.1);
+  transition:transform .25s;
+}
+.jj-topic:hover{transform:translateY(-6px)}
+.jj-topic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 22%,rgba(20,10,24,.82));z-index:1}
+.jj-topic > *{position:relative;z-index:2}
+.jj-topic-badge{
+  align-self:flex-start;font-size:11px;letter-spacing:.1em;padding:3px 10px;border-radius:20px;
+  background:rgba(255,255,255,.2);backdrop-filter:blur(4px);margin-bottom:auto;
+}
+.jj-topic h3{font-size:17px;line-height:1.4;margin-top:14px;color:#fff}
+.jj-topic p{font-size:12.5px;color:#e6d5dc;margin-top:6px}
+.jj-topic .jj-topic-stat{font-size:11.5px;color:#f0d9a8;margin-top:10px;letter-spacing:.04em}
+
+/* ---------- 创作者 ---------- */
+.jj-creator-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.jj-creator{
+  background:#fff;border:1px solid var(--jj-line);border-radius:18px;padding:22px;
+  display:flex;flex-direction:column;gap:12px;transition:transform .25s,box-shadow .25s;text-align:left;
+}
+.jj-creator:hover{transform:translateY(-5px);box-shadow:var(--jj-shadow)}
+.jj-creator-top{display:flex;align-items:center;gap:14px}
+.jj-creator .jj-ava{width:52px;height:52px;font-size:19px;box-shadow:0 8px 18px rgba(74,35,64,.22)}
+.jj-creator-name{font-size:16.5px;font-weight:700;color:var(--jj-ink)}
+.jj-creator-field{font-size:12.5px;color:var(--jj-rose);letter-spacing:.05em}
+.jj-creator-bio{font-size:13.5px;color:var(--jj-muted);flex:1}
+.jj-creator-stats{display:flex;gap:22px;padding-top:12px;border-top:1px dashed var(--jj-line);font-size:12.5px;color:#9c8a94}
+.jj-creator-stats b{display:block;font-size:16px;color:var(--jj-plum)}
+
+/* ---------- 影像墙 ---------- */
+.jj-wall{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:132px;gap:14px}
+.jj-wall-item{
+  position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--jj-line);
+  background:#e8d8c8;
+}
+.jj-wall-item svg{width:100%;height:100%;display:block;transition:transform .5s}
+.jj-wall-item:hover svg{transform:scale(1.07)}
+.jj-wall-item figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:16px 12px 9px;
+  background:linear-gradient(transparent,rgba(24,12,20,.78));
+  color:#fff;font-size:12px;line-height:1.35;
+}
+.jj-wall-item--lg{grid-column:span 3;grid-row:span 2}
+.jj-wall-item--md{grid-column:span 2}
+.jj-wall-item--sm{grid-column:span 2}
+
+/* ---------- 品牌故事 / 随笔 ---------- */
+.jj-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.jj-story{
+  background:#fff;border:1px solid var(--jj-line);border-radius:18px;padding:26px 24px;
+  display:flex;flex-direction:column;gap:10px;position:relative;overflow:hidden;transition:transform .25s;
+}
+.jj-story:hover{transform:translateY(-5px)}
+.jj-story::before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:linear-gradient(90deg,var(--jj-amber),var(--jj-rose))}
+.jj-story-date{font-size:12px;color:var(--jj-rose);letter-spacing:.1em;font-weight:600}
+.jj-story h3{font-size:16.5px;line-height:1.5;color:var(--jj-ink)}
+.jj-story p{font-size:13.5px;color:var(--jj-muted);flex:1}
+.jj-story-link{font-size:13px;font-weight:700;color:var(--jj-plum);display:inline-flex;align-items:center;gap:6px;margin-top:4px}
+.jj-story-link::after{content:"→";transition:transform .2s}
+.jj-story:hover .jj-story-link::after{transform:translateX(4px)}
+
+/* ---------- 评价 ---------- */
+.jj-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.jj-review{
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:16px;
+  padding:22px;display:flex;flex-direction:column;gap:12px;backdrop-filter:blur(6px);
+}
+.jj-review-text{font-size:14px;color:#eddfe4;flex:1}
+.jj-review-stars{color:var(--jj-amber);letter-spacing:3px;font-size:13px}
+.jj-review-user{display:flex;align-items:center;gap:10px;font-size:13px}
+.jj-review-user .jj-ava{width:32px;height:32px;font-size:12px}
+.jj-review-user b{display:block;color:#fff;font-size:13.5px;font-weight:600}
+.jj-review-user small{color:#c9b2bd;font-size:11.5px}
+
+/* ---------- 榜单 + 动态 ---------- */
+.jj-split{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:start}
+.jj-rank-list{background:#fff;border:1px solid var(--jj-line);border-radius:var(--jj-radius);overflow:hidden}
+.jj-rank-item{
+  display:flex;align-items:center;gap:14px;padding:14px 20px;border-bottom:1px solid var(--jj-line);
+  transition:background .2s;
+}
+.jj-rank-item:last-child{border-bottom:none}
+.jj-rank-item:hover{background:var(--jj-paper-2)}
+.jj-rank-no{
+  width:24px;height:24px;border-radius:7px;background:var(--jj-paper-2);color:var(--jj-plum);
+  font-size:12.5px;font-weight:800;display:grid;place-items:center;flex:none;
+}
+.jj-rank-item:nth-child(1) .jj-rank-no{background:var(--jj-amber);color:#3a2405}
+.jj-rank-item:nth-child(2) .jj-rank-no{background:#cdb9c8;color:#3b2334}
+.jj-rank-item:nth-child(3) .jj-rank-no{background:#e3c8b0;color:#4a2f18}
+.jj-rank-info{flex:1;min-width:0}
+.jj-rank-info b{display:block;font-size:14px;color:var(--jj-ink);font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.jj-rank-info small{font-size:12px;color:var(--jj-muted)}
+.jj-rank-heat{font-size:12.5px;color:var(--jj-rose);font-weight:700;flex:none}
+.jj-news-list{display:flex;flex-direction:column;gap:14px}
+.jj-news{
+  background:#fff;border:1px solid var(--jj-line);border-radius:14px;padding:16px 18px;
+  display:flex;gap:14px;align-items:flex-start;transition:transform .2s,border-color .2s;
+}
+.jj-news:hover{transform:translateX(4px);border-color:var(--jj-amber)}
+.jj-news-date{
+  flex:none;width:52px;text-align:center;border-right:1px dashed var(--jj-line);padding-right:10px;
+  color:var(--jj-plum);
+}
+.jj-news-date b{display:block;font-size:17px;line-height:1.1}
+.jj-news-date small{font-size:11px;color:var(--jj-muted)}
+.jj-news-body b{display:block;font-size:14px;color:var(--jj-ink);margin-bottom:3px;font-weight:700}
+.jj-news-body span{font-size:12.5px;color:var(--jj-muted)}
+
+/* ---------- 灵感 & 工具 ---------- */
+.jj-tool-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.jj-tool{
+  background:#fff;border:1px solid var(--jj-line);border-radius:18px;padding:24px;
+  display:flex;flex-direction:column;gap:10px;transition:transform .25s,box-shadow .25s;
+}
+.jj-tool:hover{transform:translateY(-5px);box-shadow:var(--jj-shadow)}
+.jj-tool-icon{
+  width:44px;height:44px;border-radius:13px;display:grid;place-items:center;
+  background:linear-gradient(135deg,rgba(224,161,58,.24),rgba(184,81,122,.2));
+  color:var(--jj-plum);font-weight:800;font-size:16px;margin-bottom:4px;
+}
+.jj-tool h3{font-size:16px;color:var(--jj-ink)}
+.jj-tool p{font-size:13.5px;color:var(--jj-muted);flex:1}
+.jj-tool-samples{display:flex;flex-wrap:wrap;gap:6px}
+.jj-tool-samples span{
+  font-size:11.5px;background:var(--jj-paper-2);border:1px solid var(--jj-line);
+  border-radius:20px;padding:3px 10px;color:var(--jj-plum);
+}
+
+/* ---------- 合作品牌 ---------- */
+.jj-partner-row{display:flex;flex-wrap:wrap;gap:14px}
+.jj-partner{
+  flex:1 1 160px;background:#fff;border:1px solid var(--jj-line);border-radius:14px;
+  padding:20px 16px;text-align:center;transition:.25s;
+}
+.jj-partner:hover{border-color:var(--jj-amber);transform:translateY(-3px)}
+.jj-partner b{display:block;font-size:14.5px;color:var(--jj-plum);letter-spacing:.06em}
+.jj-partner span{font-size:11.5px;color:var(--jj-muted);letter-spacing:.04em}
+
+/* ---------- FAQ ---------- */
+.jj-faq{max-width:880px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.jj-faq details{
+  background:#fff;border:1px solid var(--jj-line);border-radius:14px;overflow:hidden;
+  transition:border-color .2s;
+}
+.jj-faq details[open]{border-color:var(--jj-amber)}
+.jj-faq summary{
+  list-style:none;cursor:pointer;padding:16px 22px;font-size:15px;font-weight:600;
+  color:var(--jj-ink);display:flex;align-items:center;justify-content:space-between;gap:14px;
+}
+.jj-faq summary::-webkit-details-marker{display:none}
+.jj-faq summary::after{content:"+";font-size:20px;color:var(--jj-rose);font-weight:400;transition:transform .2s}
+.jj-faq details[open] summary::after{transform:rotate(45deg)}
+.jj-faq details p{padding:0 22px 18px;font-size:14px;color:var(--jj-muted)}
+
+/* ---------- 联系 ---------- */
+.jj-contact{
+  background:linear-gradient(140deg,var(--jj-ink),var(--jj-plum) 70%,#5c2b4a);
+  border-radius:24px;padding:46px 44px;color:#f6eadf;position:relative;overflow:hidden;
+}
+.jj-contact::after{
+  content:"";position:absolute;right:-70px;top:-70px;width:240px;height:240px;border-radius:50%;
+  background:radial-gradient(circle,rgba(224,161,58,.34),transparent 68%);
+}
+.jj-contact-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:38px;align-items:center}
+.jj-contact h2{font-size:clamp(22px,2.7vw,29px);color:#fff;line-height:1.4;margin-bottom:12px}
+.jj-contact p{font-size:14.5px;color:#dcc7d0}
+.jj-contact-info{display:flex;flex-direction:column;gap:12px;font-size:14px}
+.jj-contact-info div{display:flex;gap:10px;align-items:baseline}
+.jj-contact-info b{color:var(--jj-amber-soft);font-weight:600;flex:none;min-width:66px;font-size:13px}
+.jj-contact-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.jj-contact .jj-btn--ghost{border-color:rgba(255,255,255,.5);color:#fff}
+.jj-contact .jj-btn--ghost:hover{background:rgba(255,255,255,.12)}
+
+/* ---------- 页脚 ---------- */
+.jj-footer{background:#160f1b;color:#bda9b3;padding:56px 0 28px;font-size:13.5px}
+.jj-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:34px;margin-bottom:36px}
+.jj-footer h4{color:#f0e2d4;font-size:14.5px;margin-bottom:14px;letter-spacing:.06em}
+.jj-footer li{margin-bottom:9px}
+.jj-footer a:hover{color:var(--jj-amber)}
+.jj-footer-brand p{line-height:1.8;margin-bottom:14px;font-size:13px;color:#a893a0}
+.jj-footer-brand .jj-logo-text b{color:#fff}
+.jj-footer-brand .jj-logo-text small{color:#9c8694}
+.jj-footer-bottom{
+  border-top:1px solid rgba(255,255,255,.1);padding-top:20px;
+  display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;
+  font-size:12px;color:#8d7883;
+}
+
+/* ---------- 弹窗/Toast/回顶 ---------- */
+.jj-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,26px);
+  background:var(--jj-ink);color:#f8ecd9;font-size:13.5px;padding:11px 22px;border-radius:30px;
+  box-shadow:0 14px 34px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:.3s;z-index:400;
+  border:1px solid rgba(224,161,58,.4);
+}
+.jj-toast.show{opacity:1;transform:translate(-50%,0)}
+.jj-modal-mask{
+  position:fixed;inset:0;background:rgba(18,10,22,.62);backdrop-filter:blur(4px);
+  display:none;place-items:center;z-index:500;padding:22px;
+}
+.jj-modal-mask.show{display:grid}
+.jj-modal{
+  background:var(--jj-paper);border-radius:20px;max-width:460px;width:100%;padding:30px;
+  box-shadow:0 30px 70px rgba(0,0,0,.4);position:relative;animation:jj-pop .28s ease;
+}
+@keyframes jj-pop{from{transform:translateY(16px) scale(.97);opacity:0}to{transform:none;opacity:1}}
+.jj-modal h3{font-size:19px;color:var(--jj-ink);margin-bottom:8px}
+.jj-modal p{font-size:14px;color:var(--jj-muted);margin-bottom:18px}
+.jj-modal-close{
+  position:absolute;right:14px;top:14px;width:30px;height:30px;border-radius:50%;
+  background:var(--jj-paper-2);color:var(--jj-plum);font-size:16px;line-height:30px;text-align:center;
+}
+.jj-modal label{display:block;font-size:13px;color:var(--jj-plum);font-weight:600;margin:14px 0 6px}
+.jj-modal input,.jj-modal textarea{
+  width:100%;border:1px solid var(--jj-line);border-radius:12px;padding:10px 13px;
+  font-family:inherit;font-size:14px;background:#fff;color:var(--jj-text);outline:none;
+}
+.jj-modal input:focus,.jj-modal textarea:focus{border-color:var(--jj-amber);box-shadow:0 0 0 3px rgba(224,161,58,.16)}
+.jj-modal textarea{resize:vertical;min-height:84px}
+.jj-modal-submit{margin-top:20px;width:100%}
+.jj-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.jj-share-row button{
+  flex:1 1 100px;border-radius:12px;padding:11px 12px;font-size:13px;font-weight:600;
+  background:#fff;border:1px solid var(--jj-line);transition:.2s;
+}
+.jj-share-row button:hover{border-color:var(--jj-amber);color:var(--jj-plum)}
+.jj-to-top{
+  position:fixed;right:22px;bottom:24px;width:46px;height:46px;border-radius:50%;
+  background:var(--jj-ink);color:var(--jj-amber-soft);display:grid;place-items:center;
+  box-shadow:0 12px 28px rgba(26,18,32,.34);opacity:0;pointer-events:none;transition:.3s;z-index:150;
+}
+.jj-to-top.show{opacity:1;pointer-events:auto}
+.jj-to-top:hover{background:var(--jj-plum)}
+.jj-to-top svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:2.2}
+
+/* 锚点偏移 */
+section[id],div[id="jj-top"]{scroll-margin-top:118px}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1024px){
+  .jj-hero-grid{grid-template-columns:1fr;gap:38px}
+  .jj-hero-visual{max-width:600px}
+  .jj-feature-grid{grid-template-columns:1fr}
+  .jj-card-grid{grid-template-columns:repeat(2,1fr)}
+  .jj-topic-grid{grid-template-columns:repeat(2,1fr)}
+  .jj-creator-grid{grid-template-columns:repeat(2,1fr)}
+  .jj-explore-grid{grid-template-columns:1fr}
+  .jj-explore-aside{position:static}
+  .jj-split{grid-template-columns:1fr}
+  .jj-tool-grid{grid-template-columns:repeat(2,1fr)}
+  .jj-review-grid{grid-template-columns:repeat(2,1fr)}
+  .jj-story-grid{grid-template-columns:repeat(2,1fr)}
+  .jj-contact-grid{grid-template-columns:1fr}
+  .jj-footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  .jj-nav{display:none}
+  .jj-head-tools .jj-search{display:none}
+  .jj-head-tools .jj-btn--primary{display:none}
+  .jj-burger{display:flex}
+  .jj-section{padding:54px 0}
+  .jj-wall{grid-template-columns:repeat(4,1fr);grid-auto-rows:118px}
+  .jj-wall-item--lg{grid-column:span 2;grid-row:span 2}
+  .jj-wall-item--md{grid-column:span 2}
+  .jj-wall-item--sm{grid-column:span 2}
+}
+@media (max-width:640px){
+  body{font-size:15px}
+  .jj-header-inner{gap:14px;height:62px}
+  .jj-notice{justify-content:flex-start}
+  .jj-hero{padding:44px 0 52px}
+  .jj-hero-stats{gap:22px}
+  .jj-stat b{font-size:23px}
+  .jj-feature-side{grid-template-columns:1fr}
+  .jj-card-grid{grid-template-columns:1fr}
+  .jj-topic-grid{grid-template-columns:1fr}
+  .jj-creator-grid{grid-template-columns:1fr}
+  .jj-review-grid{grid-template-columns:1fr}
+  .jj-story-grid{grid-template-columns:1fr}
+  .jj-tool-grid{grid-template-columns:1fr}
+  .jj-wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:126px}
+  .jj-wall-item--lg,.jj-wall-item--md,.jj-wall-item--sm{grid-column:span 1}
+  .jj-wall-item--lg{grid-column:span 2}
+  .jj-contact{padding:32px 24px;border-radius:18px}
+  .jj-footer-grid{grid-template-columns:1fr}
+  .jj-hero-float--a{right:0;top:-6px}
+  .jj-hero-float--b{left:0;bottom:-8px}
+  .jj-explore-aside{padding:20px 18px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="jj-sticky-head">
+  <!-- 公告条 -->
+  <div class="jj-notice" id="jjNotice">
+    <span class="jj-notice-tag">官方发布</span>
+    <div class="jj-notice-track" aria-hidden="false">
+      <span>新品专题《一杯酒里的城市味道》上线，六大产区影像首发</span>
+      <span>「冬酿手记」创作者征集开放报名，投稿截止 12 月 12 日</span>
+      <span>91酒色品牌故事第二季更新至第 6 集：酒器与手艺人</span>
+      <span>品鉴攻略合集新增 12 条高清短片，支持收藏与分享</span>
+      <span>新品专题《一杯酒里的城市味道》上线，六大产区影像首发</span>
+      <span>「冬酿手记」创作者征集开放报名，投稿截止 12 月 12 日</span>
+      <span>91酒色品牌故事第二季更新至第 6 集：酒器与手艺人</span>
+      <span>品鉴攻略合集新增 12 条高清短片，支持收藏与分享</span>
+    </div>
+    <button class="jj-notice-close" type="button" aria-label="关闭公告" onclick="document.getElementById('jjNotice').style.display='none'">×</button>
+  </div>
+
+  <!-- 页头 -->
+  <header class="jj-header">
+    <div class="jj-wrap jj-header-inner">
+      <a class="jj-logo" href="#jj-top" aria-label="91酒色官方网站首页">
+        <span class="jj-logo-mark">91</span>
+        <span class="jj-logo-text"><b>91酒色</b><small>JIU SE STUDIO</small></span>
+      </a>
+      <nav class="jj-nav" aria-label="主导航">
+        <a href="#jj-about">品牌故事</a>
+        <a href="#jj-feature">焦点内容</a>
+        <a href="#jj-videos">视频社区</a>
+        <a href="#jj-topics">专题企划</a>
+        <a href="#jj-creators">创作者</a>
+        <a href="#jj-news">企业动态</a>
+        <a href="#jj-faq">帮助</a>
+        <a href="#jj-contact">联系我们</a>
+      </nav>
+      <div class="jj-head-tools">
+        <form class="jj-search" id="jjSearchForm" role="search" onsubmit="return false;">
+          <input type="search" id="jjSearchInput" placeholder="搜索酒色影像 / 创作者" aria-label="站内搜索">
+          <button type="button" id="jjSearchBtn">搜索</button>
+        </form>
+        <button class="jj-btn jj-btn--primary jj-btn--sm" type="button" data-jj-open="submit">投稿入口</button>
+        <button class="jj-burger" type="button" id="jjBurger" aria-label="展开导航菜单" aria-expanded="false" aria-controls="jjMobileNav">
+          <i></i><i></i><i></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 移动端导航 -->
+  <div class="jj-mobile-nav" id="jjMobileNav">
+    <a href="#jj-about">品牌故事</a>
+    <a href="#jj-feature">焦点内容</a>
+    <a href="#jj-videos">视频社区</a>
+    <a href="#jj-topics">专题企划</a>
+    <a href="#jj-creators">创作者</a>
+    <a href="#jj-news">企业动态</a>
+    <a href="#jj-faq">帮助</a>
+    <a href="#jj-contact">联系我们</a>
+    <form class="jj-search" role="search" onsubmit="return false;">
+      <input type="search" placeholder="搜索酒色影像 / 创作者" aria-label="移动端站内搜索" data-jj-search>
+      <button type="button" data-jj-search-go>搜索</button>
+    </form>
+  </div>
+</div>
+
+<main id="jj-top">
+  <!-- 首屏 -->
+  <section class="jj-hero" aria-labelledby="jj-hero-title">
+    <div class="jj-wrap jj-hero-grid">
+      <div>
+        <div class="jj-hero-badge"><span></span>91酒色官方网站 · 品牌视频门户</div>
+        <h1 class="jj-h1" id="jj-hero-title">91<em>酒色</em></h1>
+        <p class="jj-hero-slogan">以影像记录酒的色泽、温度与人的故事</p>
+        <p class="jj-hero-intro">
+          作为深耕酒类文化与生活方式领域的视频品牌，<strong>91酒色</strong>致力于为创作者、产区与酒器手艺人搭建高品质内容生态。
+          我们以原创影像为语言，讲述一杯酒的来路与去处：从葡萄园清晨的露水，到城市小馆里的一盏暖灯；
+          从酿酒师的十年坚守，到年轻人第一次举杯的笨拙与真诚。官方网站持续运营中，正版高清内容与社区互动并行，
+          让专业与温度同在。
+        </p>
+        <div class="jj-hero-actions">
+          <a class="jj-btn jj-btn--primary" href="#jj-feature">进入焦点内容</a>
+          <a class="jj-btn jj-btn--ghost" href="#jj-about">了解品牌故事</a>
+          <button class="jj-btn jj-btn--amber" type="button" data-jj-open="submit">我要投稿</button>
+        </div>
+        <div class="jj-hero-stats">
+          <div class="jj-stat"><b>3,280+</b><span>原创正版影像</span></div>
+          <div class="jj-stat"><b>168 位</b><span>签约创作者</span></div>
+          <div class="jj-stat"><b>42 城</b><span>在地拍摄足迹</span></div>
+        </div>
+      </div>
+      <div class="jj-hero-visual">
+        <div class="jj-hero-frame">
+          <svg viewBox="0 0 560 420" role="img" aria-label="91酒色品牌主视觉：暮色酒馆中的酒杯与暖光">
+            <defs>
+              <linearGradient id="jjSky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#2a1730"/><stop offset=".55" stop-color="#5a2b46"/><stop offset="1" stop-color="#b8574f"/>
+              </linearGradient>
+              <linearGradient id="jjGlassWine" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#d9485f"/><stop offset="1" stop-color="#7a1a33"/>
+              </linearGradient>
+              <radialGradient id="jjLamp" cx=".5" cy=".5" r=".5">
+                <stop offset="0" stop-color="#ffdc9a" stop-opacity=".95"/><stop offset="1" stop-color="#ffb75e" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect width="560" height="420" fill="url(#jjSky)"/>
+            <circle cx="120" cy="86" r="118" fill="url(#jjLamp)"/>
+            <g opacity=".55" fill="#2b1626">
+              <rect x="0" y="286" width="560" height="134"/>
+              <rect x="34" y="196" width="9" height="96"/>
+              <rect x="18" y="182" width="150" height="8" rx="4"/>
+              <rect x="470" y="168" width="9" height="124"/>
+              <rect x="404" y="156" width="128" height="8" rx="4"/>
+            </g>
+            <g stroke="#f6d9a8" stroke-width="2" opacity=".8">
+              <circle cx="92" cy="182" r="12" fill="#ffd89b" stroke="none"/>
+              <circle cx="440" cy="156" r="9" fill="#ffd89b" stroke="none"/>
+            </g>
+            <ellipse cx="280" cy="352" rx="182" ry="26" fill="#1d0f1a" opacity=".55"/>
+            <g>
+              <path d="M212 214h136l-14 96c-2 14-13 24-27 24h-54c-14 0-25-10-27-24z" fill="#f2e2cd" opacity=".24"/>
+              <path d="M222 246h116l-11 66c-1.6 11-10 19-21 19h-52c-11 0-19.4-8-21-19z" fill="url(#jjGlassWine)"/>
+              <ellipse cx="280" cy="214" rx="68" ry="13" fill="#f6e6cf" opacity=".55"/>
+              <rect x="274" y="330" width="12" height="30" rx="4" fill="#e8d3ba" opacity=".85"/>
+              <ellipse cx="280" cy="364" rx="46" ry="8" fill="#e8d3ba" opacity=".55"/>
+            </g>
+            <g opacity=".9">
+              <path d="M76 214c0 0 10-64 52-64s50 64 50 64z" fill="#3a2036"/>
+              <rect x="124" y="214" width="8" height="62" rx="3" fill="#3a2036"/>
+            </g>
+            <g>
+              <path d="M386 240c0-18 15-32 34-32s34 14 34 32-15 30-34 30-34-12-34-30z" fill="#e0a13a" opacity=".9"/>
+              <path d="M392 240c0-15 12-26 28-26s28 11 28 26-12 25-28 25-28-10-28-25z" fill="#f6d9a8" opacity=".55"/>
+              <rect x="416" y="268" width="8" height="20" fill="#e0a13a" opacity=".8"/>
+              <ellipse cx="420" cy="292" rx="30" ry="6" fill="#e0a13a" opacity=".55"/>
+            </g>
+            <g fill="#f8e8cd" opacity=".75">
+              <circle cx="180" cy="120" r="2.4"/><circle cx="352" cy="96" r="2"/><circle cx="470" cy="212" r="2.6"/>
+              <circle cx="250" cy="66" r="1.8"/><circle cx="66" cy="258" r="2"/>
+            </g>
+            <text x="280" y="398" text-anchor="middle" font-family="PingFang SC,Microsoft YaHei,sans-serif" font-size="13" fill="#f2d9a0" letter-spacing="6">JIU SE · 光影时刻</text>
+          </svg>
+        </div>
+        <div class="jj-hero-float jj-hero-float--a"><b>本周上新</b>12 条产区短片</div>
+        <div class="jj-hero-float jj-hero-float--b"><b>社区热度</b>4,712 次收藏</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词定位与解析（长文） -->
+  <section class="jj-section jj-explore" id="jj-about" aria-labelledby="jj-about-title">
+    <div class="jj-wrap">
+      <div class="jj-sec-head">
+        <span class="jj-eyebrow">品牌故事 / 深度解析</span>
+        <h2 class="jj-h2" id="jj-about-title">为什么是「91酒色」：一杯酒的视觉谱系</h2>
+        <p class="jj-sec-desc">从色泽、器物到人情，我们把酒这一古老主题，重新交还给影像与社区。</p>
+      </div>
+      <div class="jj-explore-grid">
+        <aside class="jj-explore-aside" aria-label="内容关键词速览">
+          <h3>内容关键词速览</h3>
+          <ul>
+            <li><span>品牌定位</span><b>视频门户</b></li>
+            <li><span>内容主轴</span><b>酒色影像</b></li>
+            <li><span>覆盖产区</span><b>42 城</b></li>
+            <li><span>创作方向</span><b>7 大题材</b></li>
+            <li><span>更新节奏</span><b>每周三更</b></li>
+            <li><span>社区形态</span><b>共创投稿</b></li>
+          </ul>
+        </aside>
+        <article class="jj-article">
+          <p>
+            「91酒色」这个名字里藏着两层意思：一层是酒本身的颜色，从清透的琥珀到深沉的宝石红，
+            一杯酒在不同光线下会呈现出完全不同的表情；另一层是人的颜色，是举杯时的脸红、夜谈时的暖灯、
+            手艺人指尖的茧。作为一家持续运营的视频品牌官方网站，我们更愿意把镜头对准这两层颜色之间的缝隙——
+            那些不太被注意、却真正构成饮酒日常的细节。
+          </p>
+          <p>
+            在内容结构上，91酒色被划分为七个相互咬合的题材：产区探索、酿造工艺、品鉴实例、器物美学、
+            人物访谈、城市夜生活与居家小酌。它们不是并列的栏目，而是一条从土地到餐桌的完整链路。
+            我们相信，一支真正专业的高清短片，应该既能交代一款酒的原料与工艺，也能让观众记住酿酒人说话的口音。
+            这正是<strong>品牌视频门户</strong>区别于普通短视频堆砌的地方：它需要体系、需要耐心，也需要一群愿意反复打磨的创作者。
+          </p>
+          <h3>一、从「颜色」开始的内容方法论</h3>
+          <p>
+            拍摄酒，最难的从来不是酒，而是光。91酒色的影像团队在长期实践中总结出一套「三色布光法」：
+            用暖侧光勾勒液体的通透感，用冷背光压住背景的杂色，最后以一点极小的点光源在杯壁留下高光。
+            这套方法已经被写入我们面向创作者的公开攻略，任何注册用户都可以在投稿指南中下载参考。
+            我们坚持把方法论公开，是因为内容生态的繁荣从来不是一家公司能独立完成的，它需要更多元、更包容的参与者。
+          </p>
+          <p>
+            与此同时，我们为每一支上线的精品内容建立「影像档案」：拍摄地点、光线条件、使用的器皿、出镜者与讲述者、
+            后续的社区反馈，都被记录在案。这些档案反过来又成为新创作者的素材库。一个从大理起步的年轻导演，
+            可以从中找到丽江某家小酒馆的窗光数据；一位在成都做手作酒杯的匠人，也能看到自己的作品如何被不同镜头语言重新解释。
+            这种<strong>内容生态</strong>的循环，是91酒色最看重的资产。
+          </p>
+          <h3>二、垂直领域里的「慢」与「准」</h3>
+          <p>
+            酒类内容天然带有门槛：风味描述的词汇、器型与温度的对应、不同酒种的适饮场景，都需要一定的背景知识。
+            91酒色选择做深而不是做宽，我们把这个赛道视为需要长期深耕的垂直领域。每一季的选题会，
+            编辑团队与签约创作者会一起把待拍清单逐条过一遍，删掉那些「看起来热闹但没有信息增量」的想法。
+            留下的题目，往往需要两到三周的拍摄周期，以及更长的时间等待一支酒在杯中安静下来。
+          </p>
+          <p>
+            这种慢，也体现在我们对创作者的态度上。品牌不会用单一的爆款标准去要求所有人：
+            有人擅长三十秒的器物特写，有人擅长二十分钟的产区长片，有人只想记录每周五晚上和朋友开瓶的琐碎。
+            我们为不同的内容形态配置不同的推荐位与结算方式，让「真实」与「温暖」不必为流量让路。
+            这是我们理解的<strong>用户至上</strong>：先让创作者被善待，观众才会被真正打动。
+          </p>
+          <h3>三、社区：把观众变成共同作者</h3>
+          <p>
+            91酒色的社区并不只是评论区。我们设置了「冬酿手记」「一杯城市」「器物的第二次生命」等长期征集计划，
+            鼓励用户上传自己的短片与图文。优秀的投稿会进入官方发布序列，获得高清转码、封面设计与分发支持。
+            截至目前，社区已经沉淀了超过三千条由用户原创的影像记录，其中不少作品的完成度足以进入焦点位。
+            对许多第一次拍摄酒类题材的人来说，这里既是学校，也是展厅。
+          </p>
+          <p>
+            为了让互动更有质量，我们在每支视频下方保留了「风味笔记」功能：观众可以写下自己喝到这支酒时的联想，
+            而不是简单地点一个赞。这些笔记会被整理成词云，回馈给创作者作为下一支片子的灵感。
+            一个关于梅子酒的话题，最终汇集了四百多条关于夏天、外婆的厨房与毕业旅行的记忆。
+            这种陪伴感，是任何算法推荐都无法替代的。
+          </p>
+          <h3>四、品牌、责任与下一页</h3>
+          <p>
+            作为一个面向公众的官方网站，我们清楚内容的影响力。91酒色在所有涉及饮酒的场景中坚持理性、适度的表达，
+            不做劝酒叙事，不美化过量；涉及未成年人的画面一律回避。这不是附加条款，而是品牌底色。
+            我们同时与产区的农户、独立酒庄和小型器物工作室保持合作，希望通过影像让更多人看见链条上每一个具体的劳动者。
+            社会责任听起来很大，落到实处往往只是一支片子有没有认真署名。
+          </p>
+          <p>
+            接下来的一个季度，91酒色将完成三件事：上线「产区地图」交互专题，开放创作者年度挑战赛报名，
+            以及把过往三年的精品内容做一次系统性的高清重制。我们希望这个品牌官网不只是一个入口，
+            而是一份可以被反复翻阅的档案。酒会喝完，颜色会褪，但被认真记录过的时刻，会留下来。
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="jj-section" id="jj-feature" aria-labelledby="jj-feature-title">
+    <div class="jj-wrap">
+      <div class="jj-sec-head">
+        <span class="jj-eyebrow">焦点内容</span>
+        <h2 class="jj-h2" id="jj-feature-title">本周值得安静看完的六支影像</h2>
+        <p class="jj-sec-desc">编辑团队从当周更新中挑出的重点推荐，涵盖产区、工艺与人的故事。</p>
+      </div>
+      <div class="jj-feature-grid">
+        <article class="jj-feature-main">
+          <div class="jj-cover">
+            <span class="jj-cover-tag">焦点 · 产区探索</span>
+            <svg viewBox="0 0 640 360" role="img" aria-label="晨雾中的葡萄园与远处山脊">
+              <defs>
+                <linearGradient id="jjVineSky" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#cdd9e4"/><stop offset=".6" stop-color="#e8ddcf"/><stop offset="1" stop-color="#c9b79c"/>
+                </linearGradient>
+                <linearGradient id="jjVineHill" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#7d8f6a"/><stop offset="1" stop-color="#485a3c"/>
+                </linearGradient>
+              </defs>
+              <rect width="640" height="360" fill="url(#jjVineSky)"/>
+              <circle cx="500" cy="86" r="34" fill="#f6e3bf" opacity=".9"/>
+              <path d="M0 214l110-58 96 42 124-70 130 62 96-44 84 46v68H0z" fill="#9aa8a0" opacity=".7"/>
+              <path d="M0 242c96-30 168-6 246 8s168 2 232-14 116-6 162 8v116H0z" fill="url(#jjVineHill)"/>
+              <g stroke="#33452c" stroke-width="3" opacity=".8">
+                <path d="M40 300l14-48M110 306l14-50M180 310l14-52M250 312l14-54M320 314l14-56M390 312l14-54M460 308l14-50M530 304l14-48"/>
+              </g>
+              <g fill="#5c7a4a" opacity=".9">
+                <circle cx="54" cy="248" r="10"/><circle cx="124" cy="252" r="11"/><circle cx="194" cy="254" r="10"/>
+                <circle cx="264" cy="256" r="11"/><circle cx="334" cy="258" r="10"/><circle cx="404" cy="256" r="11"/>
+                <circle cx="474" cy="252" r="10"/><circle cx="544" cy="250" r="11"/>
+              </g>
+              <rect y="306" width="640" height="54" fill="#3b4a33" opacity=".55"/>
+              <g opacity=".55" fill="#fff">
+                <ellipse cx="140" cy="196" rx="90" ry="14"/><ellipse cx="420" cy="182" rx="120" ry="16"/>
+              </g>
+            </svg>
+            <span class="jj-cover-dur">18:42</span>
+            <span class="jj-cover-play" aria-hidden="true"></span>
+          </div>
+          <div class="jj-feature-body">
+            <h3 class="jj-h3">雾散之前：山坡上的第三十七个采收季</h3>
+            <p>凌晨四点半，葡萄园的温度还在十一度。老周带着采收队走进雾里，这是他在这片坡地上度过的第三十七个采收季。本片以近乎静默的镜头记录一次完整的清晨采收，从剪枝、装筐到压榨车间的第一缕果香。没有解说，只有风声、脚步声和一句被录下来的家常话。</p>
+            <div class="jj-meta">
+              <span class="jj-chip">产区探索</span>
+              <span class="jj-author-line"><span class="jj-ava" style="background:#e0a13a">山</span>山野影像志</span>
+              <span>12.6 万次播放</span>
+              <span>1,840 收藏</span>
+            </div>
+          </div>
+        </article>
+        <div class="jj-feature-side">
+          <article class="jj-mini">
+            <div class="jj-cover">
+              <span class="jj-cover-tag">工艺</span>
+              <svg viewBox="0 0 320 180" role="img" aria-label="木桶酒窖里的一排橡木桶">
+                <rect width="320" height="180" fill="#2a1c16"/>
+                <rect y="128" width="320" height="52" fill="#1c1210"/>
+                <g>
+                  <rect x="24" y="62" width="66" height="70" rx="26" fill="#8a5a30"/>
+                  <rect x="98" y="56" width="66" height="76" rx="26" fill="#a06b38"/>
+                  <rect x="172" y="62" width="66" height="70" rx="26" fill="#7d4f2a"/>
+                  <rect x="246" y="58" width="62" height="74" rx="26" fill="#956033"/>
+                </g>
+                <g stroke="#3a2618" stroke-width="4">
+                  <path d="M30 82h60M104 78h60M178 82h60M252 79h58"/>
+                  <path d="M30 114h60M104 110h60M178 114h60M252 111h58"/>
+                </g>
+                <circle cx="270" cy="34" r="26" fill="#ffcf7a" opacity=".22"/>
+              </svg>
+              <span class="jj-cover-dur">09:15</span>
+              <span class="jj-cover-play" aria-hidden="true"></span>
+            </div>
+            <div class="jj-mini-body">
+              <h4>橡木桶的呼吸：一个制桶匠的四十年</h4>
+              <p>从选木到烘烤，慢火里的时间感。</p>
+              <div class="jj-mini-meta"><span>器物美学</span><span>4.8 万播放</span></div>
+            </div>
+          </article>
+          <article class="jj-mini">
+            <div class="jj-cover">
+              <span class="jj-cover-tag">品鉴</span>
+              <svg viewBox="0 0 320 180" role="img" aria-label="浅色台面上的三只品鉴酒杯">
+                <rect width="320" height="180" fill="#efe3d2"/>
+                <rect y="122" width="320" height="58" fill="#dccbb4"/>
+                <g>
+                  <path d="M92 56h44l-6 40c-1 8-7 14-15 14h-2c-8 0-14-6-15-14z" fill="#c96a5c" opacity=".85"/>
+                  <ellipse cx="114" cy="56" rx="22" ry="5" fill="#fff" opacity=".7"/>
+                  <rect x="110" y="110" width="8" height="18" fill="#b9a48d"/>
+                  <ellipse cx="114" cy="130" rx="20" ry="4" fill="#b9a48d" opacity=".7"/>
+                </g>
+                <g>
+                  <path d="M150 44h44l-6 48c-1 9-7 15-15 15h-2c-8 0-14-6-15-15z" fill="#e0a13a" opacity=".9"/>
+                  <ellipse cx="172" cy="44" rx="22" ry="5" fill="#fff" opacity=".7"/>
+                  <rect x="168" y="107" width="8" height="20" fill="#b9a48d"/>
+                  <ellipse cx="172" cy="129" rx="20" ry="4" fill="#b9a48d" opacity=".7"/>
+                </g>
+                <g>
+                  <path d="M208 62h40l-5 34c-1 7-6 12-13 12h-4c-7 0-12-5-13-12z" fill="#8d4a63" opacity=".85"/>
+                  <ellipse cx="228" cy="62" rx="20" ry="4.5" fill="#fff" opacity=".7"/>
+                  <rect x="224" y="108" width="8" height="16" fill="#b9a48d"/>
+                  <ellipse cx="228" cy="126" rx="18" ry="3.6" fill="#b9a48d" opacity=".7"/>
+                </g>
+              </svg>
+              <span class="jj-cover-dur">12:03</span>
+              <span class="jj-cover-play" aria-hidden="true"></span>
+            </div>
+            <div class="jj-mini-body">
+              <h4>三支酒的对照品鉴：温度改变了什么</h4>
+              <p>用同一种酒，在三种温度下做盲测。</p>
+              <div class="jj-mini-meta"><span>实用技巧</span><span>6.2 万播放</span></div>
+            </div>
+          </article>
+          <article class="jj-mini">
+            <div class="jj-cover">
+              <span class="jj-cover-tag">城市</span>
+              <svg viewBox="0 0 320 180" role="img" aria-label="夜色中的街边小酒馆窗户与灯">
+                <rect width="320" height="180" fill="#1e1830"/>
+                <g fill="#2d2545">
+                  <rect x="0" y="40" width="90" height="140"/><rect x="230" y="24" width="90" height="156"/>
+                </g>
+                <rect x="96" y="52" width="128" height="100" rx="8" fill="#3a2c50"/>
+                <rect x="108" y="66" width="104" height="66" rx="4" fill="#ffd08a" opacity=".85"/>
+                <g fill="#7a4a35">
+                  <rect x="126" y="88" width="10" height="44"/><rect x="176" y="96" width="9" height="36"/>
+                </g>
+                <circle cx="160" cy="34" r="10" fill="#ffcf7a" opacity=".9"/>
+                <rect x="157" y="20" width="6" height="16" fill="#ffcf7a" opacity=".6"/>
+                <g fill="#120d1c" opacity=".5">
+                  <rect x="0" y="150" width="320" height="30"/>
+                </g>
+                <g fill="#ffdc9a" opacity=".6">
+                  <circle cx="46" cy="70" r="3"/><circle cx="270" cy="58" r="3"/><circle cx="250" cy="120" r="2.4"/>
+                </g>
+              </svg>
+              <span class="jj-cover-dur">07:38</span>
+              <span class="jj-cover-play" aria-hidden="true"></span>
+            </div>
+            <div class="jj-mini-body">
+              <h4>九点以后：一间小酒馆的十二位常客</h4>
+              <p>不采访，只记录他们点单和说话的样子。</p>
+              <div class="jj-mini-meta"><span>城市夜生活</span><span>9.1 万播放</span></div>
+            </div>
+          </article>
+          <article class="jj-mini">
+            <div class="jj-cover">
+              <span class="jj-cover-tag">人物</span>
+              <svg viewBox="0 0 320 180" role="img" aria-label="窗边手捧陶杯的酿酒师侧影">
+                <rect width="320" height="180" fill="#e9ddcb"/>
+                <rect x="188" y="10" width="112" height="150" fill="#cfd9dc"/>
+                <rect x="188" y="10" width="112" height="150" fill="#fff" opacity=".2"/>
+                <g>
+                  <circle cx="120" cy="62" r="26" fill="#c99b7c"/>
+                  <path d="M92 90c10-10 46-10 58 0 14 12 18 52 14 90H78c-4-38 0-78 14-90z" fill="#5c6b74"/>
+                  <path d="M96 60c4-18 40-20 46 0-10-6-36-6-46 0z" fill="#3d3a36"/>
+                  <path d="M104 108c8 14 32 14 40 0" stroke="#c99b7c" stroke-width="0" fill="#b98a6c"/>
+                </g>
+                <g>
+                  <ellipse cx="152" cy="128" rx="16" ry="10" fill="#9c6b4a"/>
+                  <rect x="138" y="112" width="28" height="18" rx="6" fill="#8a5c3e"/>
+                </g>
+                <rect y="158" width="320" height="22" fill="#d3c2ac" opacity=".7"/>
+              </svg>
+              <span class="jj-cover-dur">22:50</span>
+              <span class="jj-cover-play" aria-hidden="true"></span>
+            </div>
+            <div class="jj-mini-body">
+              <h4>她的手记得每一块泥：陶杯与酿酒师的对谈</h4>
+              <p>一位女性匠人与一位女性酿酒师的下午。</p>
+              <div class="jj-mini-meta"><span>人物访谈</span><span>5.4 万播放</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 视频社区 -->
+  <section class="jj-section jj-section--tight" id="jj-videos" aria-labelledby="jj-videos-title">
+    <div class="jj-wrap">
+      <div class="jj-sec-head">
+        <span class="jj-eyebrow">视频社区 / 热门内容</span>
+        <h2 class="jj-h2" id="jj-videos-title">来自创作者与用户的真实酒色记录</h2>
+        <p class="jj-sec-desc">按题材筛选，找到你想看的那一杯。所有内容均为原创或经授权发布。</p>
+      </div>
+      <div class="jj-filter" id="jjFilter" role="tablist" aria-label="题材筛选">
+        <button type="button" class="active" data-jj-filter="all">全部</button>
+        <button type="button" data-jj-filter="产区">产区探索</button>
+        <button type="button" data-jj-filter="工艺">酿造工艺</button>
+        <button type="button" data-jj-filter="品鉴">品鉴实例</button>
+        <button type="button" data-jj-filter="器物">器物美学</button>
+        <button type="button" data-jj-filter="城市">城市夜生活</button>
+        <button type="button" data-jj-filter="居家">居家小酌</button>
+      </div>
+      <div class="jj-card-grid" id="jjCardGrid">
+
+        <article class="jj-card" data-jj-cat="产区">
+          <div class="jj-cover">
+            <span class="jj-cover-tag">产区</span>
+            <svg viewBox="0 0 320 180" role="img" aria-label="梯田式葡萄园在午后阳光下的俯视画面">
+              <rect width="320" height="180" fill="#dfe6d4"/>
+              <path d="M0 70c70-22 120 10 180-6s100-20 140 4v112H0z" fill="#8fa06e"/>
+              <path d="M0 100c70-16 130 12 190-4s90-10 130 8v76H0z" fill="#6d8455"/>
+              <path d="M0 132c80-12 130 10 200-2s80-6 120 6v44H0z" fill="#4c623c"/>
+              <g stroke="#3a4d2e" stroke-width="2.4" opacity=".7">
+                <path d="M0 84c80-16 120 8 180-6M0 116c90-12 130 10 200-4M0 146c80-10 140 8 200-2"/>
+              </g>
+              <circle cx="268" cy="34" r="20" fill="#fff3cf" opacity=".9"/>
+            </svg>
+            <span class="jj-cover-dur">14:26</span>
+            <span class="jj-cover-play" aria-hidden="true"></span>
+          </div>
+          <div class="jj-card-body">
+            <h4>在海拔一千米的山脊上，葡萄如何过冬</h4>
+            <p>霜降之后的修枝、覆土与防寒，一支产区的季节记录。</p>
+            <div class="jj-meta-line"></div>
+            <div class="jj-card-foot">
+              <span class="jj-author-line"><span class="jj-ava" style="background:#7d8f6a">岭</span>岭上春秋</span>
+              <span class="jj-card-acts">
+                <button class="jj-act" type="button" data-jj-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.4C5 7.9 6.9 6 9.2 6c1.4 0 2.4.7 2.8 1.5.4-.8 1.4-1.5 2.8-1.5C17.1 6 19 7.9 19 10.6 19 15.4 12 20 12 20z"/></svg><span data-jj-count>328</span></button>
+                <button class="jj-act" type="button" data-jj-fav aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4.2L6 21z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="jj-card" data-jj-cat="工艺">
+          <div class="jj-cover">
+            <span class="jj-cover-tag">工艺</span>
+            <svg viewBox="0 0 320 180" role="img" aria-label="发酵罐车间里的不锈钢罐与管道特写">
+              <rect width="320" height="180" fill="#2b2f36"/>
+              <rect x="26" y="30" width="72" height="130" rx="12" fill="#8b939c"/>
+              <rect x="110" y="18" width="82" height="142" rx="14" fill="#a4acb5"/>
+              <rect x="204" y="34" width="72" height="126" rx="12" fill="#7d858e"/>
+              <g stroke="#5b636c" stroke-width="5">
+                <path d="M98 74h12M192 66h12M204 108h-12"/>
+              </g>
+              <rect x="20" y="150" width="280" height="12" rx="6" fill="#4a5158"/>
+              <circle cx="150" cy="86" r="20" fill="#c9d2da" opacity=".55"/>
+              <circle cx="150" cy="86" r="9" fill="#5c6670"/>
+            </svg>
+            <span class="jj-cover-dur">11:08</span>
+            <span class="jj-cover-play" aria-hidden="true"></span>
+          </div>
+          <div class="jj-card-body">
+            <h4>发酵七十二小时：温度曲线背后的手工判断</h4>
+            <p>技术员一天六次巡罐，凭听声音判断发酵状态。</p>
+            <div class="jj-card-foot">
+              <span class="jj-author-line"><span class="jj-ava" style="background:#8b939c">酿</span>车间手记</span>
+              <span class="jj-card-acts">
+                <button class="jj-act" type="button" data-jj-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.4C5 7.9 6.9 6 9.2 6c1.4 0 2.4.7 2.8 1.5.4-.8 1.4-1.5 2.8-1.5C17.1 6 19 7.9 19 10.6 19 15.4 12 20 12 20z"/></svg><span data-jj-count>512</span></button>
+                <button class="jj-act" type="button" data-jj-fav aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4.2L6 21z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="jj-card" data-jj-cat="品鉴">
+          <div class="jj-cover">
+            <span class="jj-cover-tag">品鉴</span>
+            <svg viewBox="0 0 320 180" role="img" aria-label="木桌上的风味对照卡与四只小酒杯">
+              <rect width="320" height="180" fill="#f2e7d6"/>
+              <rect y="118" width="320" height="62" fill="#dbc8ae"/>
+              <g fill="#fff" stroke="#d9c4a6" stroke-width="2">
+                <rect x="26" y="30" width="74" height="52" rx="6"/>
+                <rect x="112" y="22" width="74" height="52" rx="6"/>
+                <rect x="198" y="34" width="74" height="52" rx="6"/>
+              </g>
+              <g stroke="#b99a74" stroke-width="3">
+                <path d="M38 46h48M38 58h40M124 40h48M124 52h36M210 50h48M210 62h40"/>
+              </g>
+              <g>
+                <path d="M46 96h26l-4 22c-1 5-4 8-9 8s-8-3-9-8z" fill="#c4645a"/>
+                <path d="M106 96h26l-4 22c-1 5-4 8-9 8s-8-3-9-8z" fill="#e0a13a"/>
+                <path d="M166 96h26l-4 22c-1 5-4 8-9 8s-8-3-9-8z" fill="#a9557a"/>
+                <path d="M226 96h26l-4 22c-1 5-4 8-9 8s-8-3-9-8z" fill="#cf9a4c"/>
+              </g>
+            </svg>
+            <span class="jj-cover-dur">08:47</span>
+            <span class="jj-cover-play" aria-hidden="true"></span>
+          </div>
+          <div class="jj-card-body">
+            <h4>四款入门酒的风味对照卡，一次讲清楚酸与单宁</h4>
+            <p>用生活里能买到的味道做类比，新手也能跟得上。</p>
+            <div class="jj-card-foot">
+              <span class="jj-author-line"><span class="jj-ava" style="background:#b8517a">杯</span>一杯笔记</span>
+              <span class="jj-card-acts">
+                <button class="jj-act" type="button" data-jj-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.4C5 7.9 6.9 6 9.2 6c1.4 0 2.4.7 2.8 1.5.4-.8 1.4-1.5 2.8-1.5C17.1 6 19 7.9 19 10.6 19 15.4 12 20 12 20z"/></svg><span data-jj-count>974</span></button>
+                <button class="jj-act" type="button" data-jj-fav aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4.2L6 21z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="jj-card" data-jj-cat="器物">
+          <div class="jj-cover">
+            <span class="jj-cover-tag">器物</span>
+            <svg viewBox="0 0 320 180" role="img" aria-label="工作室里未上釉的陶杯与刻刀">
+              <rect width="320" height="180" fill="#cfc2b1"/>
+              <rect y="130" width="320" height="50" fill="#b3a290"/>
+              <g>
+                <path d="M84 74h54v46c0 8-6 14-14 14h-26c-8 0-14-6-14-14z" fill="#d8b997"/>
+                <ellipse cx="111" cy="74" rx="27" ry="7" fill="#c6a582"/>
+                <path d="M138 84c14-2 20 6 20 16s-8 16-18 14" fill="none" stroke="#d8b997" stroke-width="7"/>
+              </g>
+              <g>
+                <path d="M196 46l16 0 -4 84h-8z" fill="#8d7a66"/>
+                <rect x="190" y="126" width="28" height="10" rx="4" fill="#6f5f4e"/>
+              </g>
+              <g fill="#a68f76" opacity=".7">
+                <circle cx="250" cy="60" r="4"/><circle cx="266" cy="76" r="3"/><circle cx="46" cy="52" r="3.4"/>
+              </g>
+            </svg>
+            <span class="jj-cover-dur">16:21</span>
+            <span class="jj-cover-play" aria-hidden="true"></span>
+          </div>
+          <div class="jj-card-body">
+            <h4>拉坯、修足、上釉：一只酒杯要经过多少双手</h4>
+            <p>器物美学系列第三集，走进景德镇的一间小工作室。</p>
+            <div class="jj-card-foot">
+              <span class="jj-author-line"><span class="jj-ava" style="background:#a68f76">陶</span>器与手</span>
+              <span class="jj-card-acts">
+                <button class="jj-act" type="button" data-jj-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.4C5 7.9 6.9 6 9.2 6c1.4 0 2.4.7 2.8 1.5.4-.8 1.4-1.5 2.8-1.5C17.1 6 19 7.9 19 10.6 19 15.4 12 20 12 20z"/></svg><span data-jj-count>421</span></button>
+                <button class="jj-act" type="button" data-jj-fav aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4.2L6 21z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="jj-card" data-jj-cat="城市">
+          <div class="jj-cover">
+            <span class="jj-cover-tag">城市</span>
+            <svg viewBox="0 0 320 180" role="img" aria-label="雨天夜里霓虹映在湿滑街道上的倒影">
+              <rect width="320" height="180" fill="#161c2a"/>
+              <g fill="#222b3d">
+                <rect x="10" y="24" width="70" height="120"/><rect x="92" y="10" width="58" height="134"/><rect x="220" y="18" width="86" height="126"/>
+              </g>
+              <g fill="#ffd27a" opacity=".75">
+                <rect x="22" y="40" width="14" height="12"/><rect x="48" y="40" width="14" height="12"/>
+                <rect x="22" y="66" width="14" height="12"/><rect x="104" y="30" width="14" height="12"/><rect x="130" y="30" width="14" height="12"/>
+              </g>
+              <g fill="#f0708a" opacity=".8">
+                <rect x="236" y="36" width="18" height="12"/><rect x="266" y="36" width="18" height="12"/><rect x="236" y="64" width="18" height="12"/>
+              </g>
+              <rect y="144" width="320" height="36" fill="#0d1220"/>
+              <g opacity=".45">
+                <rect x="22" y="150" width="14" height="26" fill="#ffd27a"/><rect x="130" y="150" width="14" height="26" fill="#ffd27a"/>
+                <rect x="236" y="150" width="18" height="26" fill="#f0708a"/><rect x="266" y="150" width="18" height="26" fill="#f0708a"/>
+              </g>
+              <g stroke="#7c8ba6" stroke-width="1.4" opacity=".5">
+                <path d="M40 0v22M120 0v18M200 0v20M280 0v16"/>
+              </g>
+            </svg>
+            <span class="jj-cover-dur">10:34</span>
+            <span class="jj-cover-play" aria-hidden="true"></span>
+          </div>
+          <div class="jj-card-body">
+            <h4>雨夜行走：从巷口到吧台的十五分钟</h4>
+            <p>不设旁白，只用环境声与雨声串起一段城市夜路。</p>
+            <div class="jj-card-foot">
+              <span class="jj-author-line"><span class="jj-ava" style="background:#3f5b7a">夜</span>夜行档案</span>
+              <span class="jj-card-acts">
+                <button class="jj-act" type="button" data-jj-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.4C5 7.9 6.9 6 9.2 6c1.4 0 2.4.7 2.8 1.5.4-.8 1.4-1.5 2.8-1.5C17.1 6 19 7.9 19 10.6 19 15.4 12 20 12 20z"/></svg><span data-jj-count>688</span></button>
+                <button class="jj-act" type="button" data-jj-fav aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4.2L6 21z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="jj-card" data-jj-cat="居家">
+          <div class="jj-cover">
+            <span class="jj-cover-tag">居家</span>
+            <svg viewBox="0 0 320 180" role="img" aria-label="客厅飘窗边的小桌与一瓶酒两只杯">
+              <rect width="320" height="180" fill="#f3e9dc"/>
+              <rect x="180" y="12" width="130" height="98" fill="#cbd9e0"/>
+              <rect x="180" y="12" width="130" height="98" fill="#fff" opacity=".24"/>
+              <path d="M188 110V12M300 110V12M180 60h130" stroke="#e5d8c5" stroke-width="5"/>
+              <rect y="126" width="320" height="54" fill="#e2d2bd"/>
+              <g>
+                <path d="M96 62c0-10 8-18 18-18s18 8 18 18v34c0 8-6 14-14 14h-8c-8 0-14-6-14-14z" fill="#7c3d55"/>
+                <rect x="111" y="40" width="10" height="14" fill="#5a2b40"/>
+                <ellipse cx="116" cy="62" rx="18" ry="5" fill="#fff" opacity=".3"/>
+              </g>
+              <g>
+                <path d="M46 84h26l-4 22c-1 5-4 8-9 8s-8-3-9-8z" fill="#c98b63"/>
+                <path d="M150 90h20l-3 16c-1 4-3 6-7 6s-6-2-7-6z" fill="#b8705a"/>
+              </g>
+              <g fill="#8ea88a" opacity=".8">
+                <path d="M268 122c0-22 10-40 22-48-2 22-8 40-22 48z"/>
+                <path d="M262 122c-10-14-24-20-34-20 4 16 16 20 34 20z"/>
+              </g>
+            </svg>
+            <span class="jj-cover-dur">06:52</span>
+            <span class="jj-cover-play" aria-hidden="true"></span>
+          </div>
+          <div class="jj-card-body">
+            <h4>一个人住也要好好开瓶：三款小容量酒的日常</h4>
+            <p>不浪费、不将就，独居饮酒的务实方案。</p>
+            <div class="jj-card-foot">
+              <span class="jj-author-line"><span class="jj-ava" style="background:#8ea88a">居</span>小桌日常</span>
+              <span class="jj-card-acts">
+                <button class="jj-act" type="button" data-jj-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.4C5 7.9 6.9 6 9.2 6c1.4 0 2.4.7 2.8 1.5.4-.8 1.4-1.5 2.8-1.5C17.1 6 19 7.9 19 10.6 19 15.4 12 20 12 20z"/></svg><span data-jj-count>1.3k</span></button>
+                <button class="jj-act" type="button" data-jj-fav aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4.2L6 21z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="jj-card" data-jj-cat="产区">
+          <div class="jj-cover">
+            <span class="jj-cover-tag">产区</span>
+            <svg viewBox="0 0 320 180" role="img" aria-label="海风掠过临海酒庄的白色墙体与橄榄树">
+              <rect width="320" height="180" fill="#dfeaf0"/>
+              <rect y="112" width="320" height="68" fill="#9fb59e"/>
+              <rect x="30" y="60" width="150" height="56" fill="#f6f2e9"/>
+              <path d="M30 60l75-30 75 30z" fill="#d8cdbb"/>
+              <g fill="#7d9482"><rect x="56" y="78" width="20" height="26"/><rect x="92" y="78" width="20" height="26"/><rect x="128" y="78" width="20" height="26"/></g>
+              <g>
+                <rect x="230" y="86" width="8" height="30" fill="#7a6a52"/>
+                <circle cx="234" cy="76" r="22" fill="#93a882"/>
+                <circle cx="216" cy="86" r="14" fill="#83996f"/>
+              </g>
+              <g stroke="#b6cbd4" stroke-width="2.6" opacity=".8">
+                <path d="M0 128c40-6 70 6 110 0s80 6 120 0 70 6 90 0"/>
+                <path d="M0 146c50-6 80 6 130 0s90 6 130-2"/>
+              </g>
+            </svg>
+            <span class="jj-cover-dur">19:05</span>
+            <span class="jj-cover-play" aria-hidden="true"></span>
+          </div>
+          <div class="jj-card-body">
+            <h4>海风、盐雾与一块坡地：临海酒庄的选址逻辑</h4>
+            <p>为什么有的年份好，有的年份难，地理给出了答案。</p>
+            <div class="jj-card-foot">
+              <span class="jj-author-line"><span class="jj-ava" style="background:#7d9482">岸</span>海岸线影像</span>
+              <span class="jj-card-acts">
+                <button class="jj-act" type="button" data-jj-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.4C5 7.9 6.9 6 9.2 6c1.4 0 2.4.7 2.8 1.5.4-.8 1.4-1.5 2.8-1.5C17.1 6 19 7.9 19 10.6 19 15.4 12 20 12 20z"/></svg><span data-jj-count>356</span></button>
+                <button class="jj-act" type="button" data-jj-fav aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4.2L6 21z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="jj-card" data-jj-cat="品鉴">
+          <div class="jj-cover">
+            <span class="jj-cover-tag">品鉴</span>
+            <svg viewBox="0 0 320 180" role="img" aria-label="餐桌上酒杯与三道家常菜的搭配俯拍">
+              <rect width="320" height="180" fill="#e9dcc9"/>
+              <circle cx="80" cy="86" r="42" fill="#f7f1e6"/>
+              <circle cx="80" cy="86" r="30" fill="#c96a52"/>
+              <circle cx="196" cy="60" r="26" fill="#f7f1e6"/>
+              <circle cx="196" cy="60" r="18" fill="#8fa06e"/>
+              <circle cx="236" cy="126" r="30" fill="#f7f1e6"/>
+              <circle cx="236" cy="126" r="21" fill="#e0a13a"/>
+              <g>
+                <path d="M148 96h30l-5 34c-1 6-5 10-10 10s-9-4-10-10z" fill="#c9556a"/>
+                <ellipse cx="163" cy="96" rx="15" ry="4" fill="#fff" opacity=".45"/>
+              </g>
+              <g stroke="#cdbba1" stroke-width="2" opacity=".8">
+                <path d="M20 158h280"/>
+              </g>
+            </svg>
+            <span class="jj-cover-dur">13:40</span>
+            <span class="jj-cover-play" aria-hidden="true"></span>
+          </div>
+          <div class="jj-card-body">
+            <h4>家常三道菜配什么酒：一份不装的搭配清单</h4>
+            <p>红烧、清蒸、凉拌，用最普通的菜式讲搭配原则。</p>
+            <div class="jj-card-foot">
+              <span class="jj-author-line"><span class="jj-ava" style="background:#c9556a">食</span>餐桌上下</span>
+              <span class="jj-card-acts">
+                <button class="jj-act" type="button" data-jj-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.4C5 7.9 6.9 6 9.2 6c1.4 0 2.4.7 2.8 1.5.4-.8 1.4-1.5 2.8-1.5C17.1 6 19 7.9 19 10.6 19 15.4 12 20 12 20z"/></svg><span data-jj-count>2.1k</span></button>
+                <button class="jj-act" type="button" data-jj-fav aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4.2L6 21z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+        <article class="jj-card" data-jj-cat="工艺">
+          <div class="jj-cover">
+            <span class="jj-cover-tag">工艺</span>
+            <svg viewBox="0 0 320 180" role="img" aria-label="手工蒸馏器上凝结的液滴特写">
+              <rect width="320" height="180" fill="#20191a"/>
+              <path d="M60 150c0-56 26-96 100-96s100 40 100 96z" fill="#b0703c"/>
+              <path d="M150 54h20v22h-20z" fill="#d09558"/>
+              <path d="M170 62h60c14 0 22 10 22 22v10" fill="none" stroke="#d09558" stroke-width="9"/>
+              <path d="M252 94v18" stroke="#e8c79a" stroke-width="4"/>
+              <circle cx="252" cy="122" r="7" fill="#f3d9a8"/>
+              <ellipse cx="160" cy="152" rx="102" ry="12" fill="#3a2a28" opacity=".8"/>
+              <g fill="#ffd28a" opacity=".6">
+                <circle cx="86" cy="60" r="2.6"/><circle cx="236" cy="42" r="2"/><circle cx="268" cy="140" r="2.4"/>
+              </g>
+            </svg>
+            <span class="jj-cover-dur">15:17</span>
+            <span class="jj-cover-play" aria-hidden="true"></span>
+          </div>
+          <div class="jj-card-body">
+            <h4>铜器与火候：小批量蒸馏的一天</h4>
+            <p>看一位师傅如何只凭气味决定何时掐头去尾。</p>
+            <div class="jj-card-foot">
+              <span class="jj-author-line"><span class="jj-ava" style="background:#b0703c">火</span>慢火工艺组</span>
+              <span class="jj-card-acts">
+                <button class="jj-act" type="button" data-jj-like aria-label="点赞"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.6-7-9.4C5 7.9 6.9 6 9.2 6c1.4 0 2.4.7 2.8 1.5.4-.8 1.4-1.5 2.8-1.5C17.1 6 19 7.9 19 10.6 19 15.4 12 20 12 20z"/></svg><span data-jj-count>245</span></button>
+                <button class="jj-act" type="button" data-jj-fav aria-label="收藏"><svg viewBox="0 0 24 24"><path d="M6 4h12v17l-6-4.2L6 21z"/></svg></button>
+              </span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="jj-section" id="jj-topics" aria-labelledby="jj-topics-title">
+    <div class="jj-wrap">
+      <div class="jj-sec-head">
+        <span class="jj-eyebrow">专题企划</span>
+        <h2 class="jj-h2" id="jj-topics-title">正在进行的四个长期计划</h2>
+        <p class="jj-sec-desc">每个企划都有明确的更新时间与参与方式，欢迎创作者报名加入。</p>
+      </div>
+      <div class="jj-topic-grid">
+        <a class="jj-topic" href="#jj-contact" style="background:linear-gradient(150deg,#7a2f45,#c76a5c)">
+          <span class="jj-topic-badge">更新中 · 第 3 季</span>
+          <h3>一杯城市</h3>
+          <p>在四十二座城市里，寻找属于当地的饮法与夜。</p>
+          <span class="jj-topic-stat">已发布 26 支 · 持续征集中</span>
+        </a>
+        <a class="jj-topic" href="#jj-contact" style="background:linear-gradient(150deg,#3d4a33,#8fa06e)">
+          <span class="jj-topic-badge">已完结 · 全 8 集</span>
+          <h3>冬酿手记</h3>
+          <p>从立冬到春分，跟拍三家小酒庄的完整酿造周期。</p>
+          <span class="jj-topic-stat">累计播放 218 万 · 可回看</span>
+        </a>
+        <a class="jj-topic" href="#jj-contact" style="background:linear-gradient(150deg,#2f3450,#6b7fae)">
+          <span class="jj-topic-badge">报名中 · 至 12/12</span>
+          <h3>器物的第二次生命</h3>
+          <p>旧杯、旧瓶与旧木箱的重制计划，面向所有手作爱好者。</p>
+          <span class="jj-topic-stat">已收到 143 份投稿</span>
+        </a>
+        <a class="jj-topic" href="#jj-contact" style="background:linear-gradient(150deg,#6a4b23,#d09a4e)">
+          <span class="jj-topic-badge">预告 · 即将上线</span>
+          <h3>山脊之上</h3>
+          <p>高海拔产区的风味差异，一次横跨三省的影像测绘。</p>
+          <span class="jj-topic-stat">首支正片 12 月发布</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="jj-section jj-section--tight" id="jj-creators" aria-labelledby="jj-creators-title">
+    <div class="jj-wrap">
+      <div class="jj-sec-head">
+        <span class="jj-eyebrow">创作者矩阵</span>
+        <h2 class="jj-h2" id="jj-creators-title">把镜头交给这些认真的人</h2>
+        <p class="jj-sec-desc">六位长期合作的创作者，覆盖产区、工艺、器物与城市四个方向。</p>
+      </div>
+      <div class="jj-creator-grid">
+        <button class="jj-creator" type="button" data-jj-creator="山野影像志|产区探索，长期驻扎西南山地，拍摄采收与四季变化|82|9.6万">
+          <div class="jj-creator-top">
+            <span class="jj-ava" style="background:#7d8f6a">山</span>
+            <div><div class="jj-creator-name">山野影像志</div><div class="jj-creator-field">产区探索 · 西南山地</div></div>
+          </div>
+          <p class="jj-creator-bio">在海拔一千到两千米之间往返七年，擅长用长镜头等待光线变化。代表作《雾散之前》系列在社区获得广泛口碑，被许多同行称为「产区的耐心」。</p>
+          <div class="jj-creator-stats"><span><b>82</b>作品</span><span><b>9.6万</b>关注</span><span><b>4.9</b>口碑</span></div>
+        </button>
+        <button class="jj-creator" type="button" data-jj-creator="车间手记|酿造工艺，工程师转行的技术派作者|56|7.2万">
+          <div class="jj-creator-top">
+            <span class="jj-ava" style="background:#8b939c">酿</span>
+            <div><div class="jj-creator-name">车间手记</div><div class="jj-creator-field">酿造工艺 · 技术派</div></div>
+          </div>
+          <p class="jj-creator-bio">前食品工程从业者，习惯把复杂的发酵流程拆成可验证的步骤。视频里常有手绘示意图与温度曲线，深受入门观众信赖，被视为社区的「科普担当」。</p>
+          <div class="jj-creator-stats"><span><b>56</b>作品</span><span><b>7.2万</b>关注</span><span><b>4.8</b>口碑</span></div>
+        </button>
+        <button class="jj-creator" type="button" data-jj-creator="一杯笔记|品鉴实例，风味语言翻译者|130|15.3万">
+          <div class="jj-creator-top">
+            <span class="jj-ava" style="background:#b8517a">杯</span>
+            <div><div class="jj-creator-name">一杯笔记</div><div class="jj-creator-field">品鉴实例 · 风味语言</div></div>
+          </div>
+          <p class="jj-creator-bio">擅长把抽象的风味描述翻译成生活里的气味记忆，比如「像刚拆封的旧书」或者「雨后的水泥地」。她主张品鉴不必端着，普通人也能建立自己的坐标系。</p>
+          <div class="jj-creator-stats"><span><b>130</b>作品</span><span><b>15.3万</b>关注</span><span><b>4.9</b>口碑</span></div>
+        </button>
+        <button class="jj-creator" type="button" data-jj-creator="器与手|器物美学，专注于杯型与触感|43|5.1万">
+          <div class="jj-creator-top">
+            <span class="jj-ava" style="background:#a68f76">陶</span>
+            <div><div class="jj-creator-name">器与手</div><div class="jj-creator-field">器物美学 · 手作</div></div>
+          </div>
+          <p class="jj-creator-bio">常年在景德镇与德化之间往返，拍摄陶艺工作室里的慢工。她的片子几乎没有配乐，只有拉坯机的声音和釉料落下的水声，被观众形容为「解压又清醒」。</p>
+          <div class="jj-creator-stats"><span><b>43</b>作品</span><span><b>5.1万</b>关注</span><span><b>4.7</b>口碑</span></div>
+        </button>
+        <button class="jj-creator" type="button" data-jj-creator="夜行档案|城市夜生活，街头纪录方向|71|8.8万">
+          <div class="jj-creator-top">
+            <span class="jj-ava" style="background:#3f5b7a">夜</span>
+            <div><div class="jj-creator-name">夜行档案</div><div class="jj-creator-field">城市夜生活 · 街头纪录</div></div>
+          </div>
+          <p class="jj-creator-bio">一个人一台机器，习惯在晚上十点以后出门。他不打扰拍摄对象，也不做采访，只用环境声构建情绪。许多城市青年在他的影像里第一次认出自己常去的那条街。</p>
+          <div class="jj-creator-stats"><span><b>71</b>作品</span><span><b>8.8万</b>关注</span><span><b>4.8</b>口碑</span></div>
+        </button>
+        <button class="jj-creator" type="button" data-jj-creator="小桌日常|居家小酌，生活化实用内容|98|11.4万">
+          <div class="jj-creator-top">
+            <span class="jj-ava" style="background:#8ea88a">居</span>
+            <div><div class="jj-creator-name">小桌日常</div><div class="jj-creator-field">居家小酌 · 实用生活</div></div>
+          </div>
+          <p class="jj-creator-bio">独居第八年，把每天的晚餐和偶尔的一杯酒拍成连续记录。她关心的是容量、保存与搭配这些具体问题，视频结尾常附一张手写的采购小票，实用又温暖。</p>
+          <div class="jj-creator-stats"><span><b>98</b>作品</span><span><b>11.4万</b>关注</span><span><b>4.9</b>口碑</span></div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 影像墙 -->
+  <section class="jj-section" aria-labelledby="jj-wall-title">
+    <div class="jj-wrap">
+      <div class="jj-sec-head">
+        <span class="jj-eyebrow">用户作品墙</span>
+        <h2 class="jj-h2" id="jj-wall-title">这一周，社区里被反复点开的画面</h2>
+        <p class="jj-sec-desc">来自用户上传的原创影像，经授权在官方网站展示，尺寸与题材各不相同。</p>
+      </div>
+      <div class="jj-wall">
+        <figure class="jj-wall-item jj-wall-item--lg">
+          <svg viewBox="0 0 520 300" role="img" aria-label="傍晚阳台上的一杯酒与远处城市天际线" preserveAspectRatio="xMidYMid slice">
+            <defs><linearGradient id="jjWall1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f2b48a"/><stop offset=".55" stop-color="#c96a78"/><stop offset="1" stop-color="#5d3055"/></linearGradient></defs>
+            <rect width="520" height="300" fill="url(#jjWall1)"/>
+            <g fill="#4a2a4a" opacity=".8">
+              <rect x="0" y="196" width="76" height="104"/><rect x="84" y="168" width="58" height="132"/><rect x="150" y="208" width="70" height="92"/>
+              <rect x="356" y="180" width="74" height="120"/><rect x="438" y="152" width="64" height="148"/>
+            </g>
+            <circle cx="258" cy="146" r="42" fill="#ffdba6" opacity=".82"/>
+            <g fill="#2d1a2c">
+              <rect y="256" width="520" height="44"/>
+              <rect x="196" y="212" width="128" height="12" rx="5"/>
+            </g>
+            <g>
+              <path d="M236 186h48l-5 34c-1.4 8-6 13-13 13h-12c-7 0-11.6-5-13-13z" fill="#e6a25e" opacity=".95"/>
+              <ellipse cx="260" cy="186" rx="24" ry="5" fill="#fff" opacity=".4"/>
+              <rect x="257" y="230" width="6" height="22" fill="#e6cdb1" opacity=".7"/>
+            </g>
+            <g fill="#fff" opacity=".55"><circle cx="96" cy="66" r="2"/><circle cx="392" cy="52" r="2.4"/><circle cx="470" cy="98" r="1.8"/></g>
+          </svg>
+          <figcaption>@阿岩 · 阳台上的十九岁第一杯</figcaption>
+        </figure>
+        <figure class="jj-wall-item jj-wall-item--md">
+          <svg viewBox="0 0 360 200" role="img" aria-label="老式木桌上的一盏小灯和半瓶酒" preserveAspectRatio="xMidYMid slice">
+            <rect width="360" height="200" fill="#3a2c26"/>
+            <rect y="140" width="360" height="60" fill="#2a1e1a"/>
+            <circle cx="252" cy="76" r="46" fill="#ffcf7a" opacity=".2"/>
+            <path d="M228 106c0-18 12-30 26-30s24 12 24 30-10 26-26 26-24-10-24-26z" fill="#ffcf7a" opacity=".5"/>
+            <g>
+              <path d="M84 78h26l-.5 56c0 8-5 12-12.5 12S84 142 84 134z" fill="#8d4a35"/>
+              <rect x="93" y="58" width="9" height="22" fill="#6f3726"/>
+              <ellipse cx="97.5" cy="78" rx="13" ry="3.6" fill="#fff" opacity=".24"/>
+            </g>
+            <g stroke="#f0c98f" stroke-width="2" opacity=".55"><path d="M140 118h56"/></g>
+          </svg>
+          <figcaption>@林栖 · 小灯与半瓶，冬天慢一点</figcaption>
+        </figure>
+        <figure class="jj-wall-item jj-wall-item--sm">
+          <svg viewBox="0 0 260 200" role="img" aria-label="沾着水珠的酒杯杯壁与背景散景" preserveAspectRatio="xMidYMid slice">
+            <rect width="260" height="200" fill="#8a4a5a"/>
+            <circle cx="196" cy="44" r="30" fill="#ffd9ae" opacity=".5"/>
+            <circle cx="52" cy="140" r="22" fill="#ffb27a" opacity=".35"/>
+            <g stroke="#f6dcd0" stroke-width="3" opacity=".55" fill="none">
+              <path d="M84 40c40 10 54 60 40 110"/><path d="M104 44c30 14 40 56 28 96"/>
+            </g>
+            <g fill="#ffe4d4" opacity=".8">
+              <circle cx="96" cy="72" r="4"/><circle cx="118" cy="106" r="3.4"/><circle cx="92" cy="130" r="3"/><circle cx="128" cy="60" r="2.4"/>
+            </g>
+          </svg>
+          <figcaption>@苏七 · 杯壁上的雨</figcaption>
+        </figure>
+        <figure class="jj-wall-item jj-wall-item--sm">
+          <svg viewBox="0 0 260 200" role="img" aria-label="一对杯沿轻碰的手部特写" preserveAspectRatio="xMidYMid slice">
+            <rect width="260" height="200" fill="#e9d6bd"/>
+            <rect y="148" width="260" height="52" fill="#d6bfa2"/>
+            <g>
+              <path d="M66 60h30l-4 62c-1 9-6 14-11 14s-10-5-11-14z" fill="#c07a5c" opacity=".9"/>
+              <path d="M164 60h30l-4 62c-1 9-6 14-11 14s-10-5-11-14z" fill="#8f4f5e" opacity=".9"/>
+            </g>
+            <g stroke="#c8a88a" stroke-width="9" stroke-linecap="round">
+              <path d="M40 150c8-28 14-44 34-56"/><path d="M220 150c-8-28-14-44-34-56"/>
+            </g>
+            <circle cx="130" cy="98" r="16" fill="#fff" opacity=".4"/>
+          </svg>
+          <figcaption>@周周 · 碰一下，今年辛苦了</figcaption>
+        </figure>
+        <figure class="jj-wall-item jj-wall-item--sm">
+          <svg viewBox="0 0 260 200" role="img" aria-label="酒窖墙上斑驳的砖纹与一盏挂灯" preserveAspectRatio="xMidYMid slice">
+            <rect width="260" height="200" fill="#5c4136"/>
+            <g stroke="#4a332a" stroke-width="2" opacity=".8">
+              <path d="M0 30h260M0 62h260M0 94h260M0 126h260M0 158h260"/>
+              <path d="M60 0v30M130 30v32M80 62v32M180 94v32M50 126v32M140 158v42"/>
+            </g>
+            <circle cx="130" cy="56" r="34" fill="#ffcf7a" opacity=".2"/>
+            <circle cx="130" cy="52" r="9" fill="#ffd89b"/>
+            <path d="M130 61v14" stroke="#ffd89b" stroke-width="2"/>
+          </svg>
+          <figcaption>@木瓦 · 窖里的那点光</figcaption>
+        </figure>
+        <figure class="jj-wall-item jj-wall-item--md">
+          <svg viewBox="0 0 360 200" role="img" aria-label="雪后院子里的一只酒杯与围巾" preserveAspectRatio="xMidYMid slice">
+            <rect width="360" height="200" fill="#dfe6ec"/>
+            <rect y="132" width="360" height="68" fill="#f4f7f9"/>
+            <g fill="#b9c6d0">
+              <path d="M0 132c20-12 44-12 66 0zM120 132c24-14 52-14 76 0zM250 132c22-12 48-12 70 0z"/>
+            </g>
+            <g>
+              <path d="M150 74h60l-6 44c-1.6 10-7 16-16 16h-16c-9 0-14.4-6-16-16z" fill="#b25a58" opacity=".9"/>
+              <rect x="176" y="134" width="8" height="22" fill="#9c7f6a"/>
+              <ellipse cx="180" cy="158" rx="22" ry="5" fill="#a98d78" opacity=".65"/>
+            </g>
+            <g fill="#9c4b58" opacity=".85">
+              <path d="M58 130c6-16 20-22 30-18s14 14 10 22-22 10-40-4z"/>
+              <path d="M72 140c10-8 22-6 26 0s-2 12-12 12-16-4-14-12z"/>
+            </g>
+          </svg>
+          <figcaption>@冬至 · 雪停了，暖一会儿</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 榜单 + 动态 -->
+  <section class="jj-section jj-section--tight" id="jj-news" aria-labelledby="jj-news-title">
+    <div class="jj-wrap">
+      <div class="jj-sec-head">
+        <span class="jj-eyebrow">热度榜 / 企业动态</span>
+        <h2 class="jj-h2" id="jj-news-title">社区正在热传，品牌正在发生</h2>
+        <p class="jj-sec-desc">榜单每日更新，企业动态由官方发布，所有信息均可追溯。</p>
+      </div>
+      <div class="jj-split">
+        <div>
+          <h3 class="jj-h3" style="margin-bottom:14px">本周热度榜</h3>
+          <div class="jj-rank-list">
+            <div class="jj-rank-item"><span class="jj-rank-no">1</span><div class="jj-rank-info"><b>雾散之前：山坡上的第三十七个采收季</b><small>山野影像志 · 产区探索</small></div><span class="jj-rank-heat">98.2</span></div>
+            <div class="jj-rank-item"><span class="jj-rank-no">2</span><div class="jj-rank-info"><b>家常三道菜配什么酒：一份不装的搭配清单</b><small>餐桌上下 · 品鉴实例</small></div><span class="jj-rank-heat">95.7</span></div>
+            <div class="jj-rank-item"><span class="jj-rank-no">3</span><div class="jj-rank-info"><b>一个人住也要好好开瓶：三款小容量酒的日常</b><small>小桌日常 · 居家小酌</small></div><span class="jj-rank-heat">93.4</span></div>
+            <div class="jj-rank-item"><span class="jj-rank-no">4</span><div class="jj-rank-info"><b>四款入门酒的风味对照卡，一次讲清楚酸与单宁</b><small>一杯笔记 · 品鉴实例</small></div><span class="jj-rank-heat">91.6</span></div>
+            <div class="jj-rank-item"><span class="jj-rank-no">5</span><div class="jj-rank-info"><b>雨夜行走：从巷口到吧台的十五分钟</b><small>夜行档案 · 城市夜生活</small></div><span class="jj-rank-heat">88.9</span></div>
+          </div>
+        </div>
+        <div>
+          <h3 class="jj-h3" style="margin-bottom:14px">企业动态 / 官方发布</h3>
+          <div class="jj-news-list">
+            <div class="jj-news">
+              <div class="jj-news-date"><b>11/17</b><small>2026</small></div>
+              <div class="jj-news-body"><b>「冬酿手记」第二季开放报名</b><span>面向所有注册创作者，投稿截止 12 月 12 日，入选作品将获得官方分发支持。</span></div>
+            </div>
+            <div class="jj-news">
+              <div class="jj-news-date"><b>11/12</b><small>2026</small></div>
+              <div class="jj-news-body"><b>产区地图交互专题进入内测</b><span>首批覆盖六个产区，支持按季节、海拔与品种筛选相关影像。</span></div>
+            </div>
+            <div class="jj-news">
+              <div class="jj-news-date"><b>11/06</b><small>2026</small></div>
+              <div class="jj-news-body"><b>精品内容高清重制计划启动</b><span>过往三年共 240 支作品将陆续完成重制，画质与字幕同步优化。</span></div>
+            </div>
+            <div class="jj-news">
+              <div class="jj-news-date"><b>10/28</b><small>2026</small></div>
+              <div class="jj-news-body"><b>与三家独立酒庄达成内容合作</b><span>合作方向包括产区纪录、酿造工艺与年度风味档案的联合制作。</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 灵感工具 -->
+  <section class="jj-section" aria-labelledby="jj-tool-title">
+    <div class="jj-wrap">
+      <div class="jj-sec-head">
+        <span class="jj-eyebrow">创作灵感</span>
+        <h2 class="jj-h2" id="jj-tool-title">不知道拍什么？从这里开始</h2>
+        <p class="jj-sec-desc">整理自社区高频问题与编辑经验，所有模板均可自由使用。</p>
+      </div>
+      <div class="jj-tool-grid">
+        <div class="jj-tool">
+          <div class="jj-tool-icon">01</div>
+          <h3>脚本灵感：三句话结构</h3>
+          <p>开场用一个具体动作，中段给一个可以验证的细节，结尾留一句不解释的话。酒类短片尤其适合这种结构，因为它天然有「过程」。</p>
+          <div class="jj-tool-samples"><span>倒酒的特写</span><span>一句家常话</span><span>空镜收尾</span></div>
+        </div>
+        <div class="jj-tool">
+          <div class="jj-tool-icon">02</div>
+          <h3>标题建议：少用形容词</h3>
+          <p>把「惊艳」「绝美」换掉，改成时间、地点或数量。「凌晨四点的采收队」比「震撼的葡萄园」更容易被记住，也更容易被搜索到。</p>
+          <div class="jj-tool-samples"><span>时间 + 地点</span><span>数字 + 动作</span><span>一个人的名字</span></div>
+        </div>
+        <div class="jj-tool">
+          <div class="jj-tool-icon">03</div>
+          <h3>剪辑思路：先做声音</h3>
+          <p>很多创作者先剪画面再配乐，我们建议反过来：先把环境声铺好，让画面跟着声音走。杯壁的轻响、液体的流动，本身就是节奏。</p>
+          <div class="jj-tool-samples"><span>环境声先行</span><span>留白三秒</span><span>放弃铺满配乐</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 品牌故事随笔 -->
+  <section class="jj-section jj-section--tight" aria-labelledby="jj-story-title">
+    <div class="jj-wrap">
+      <div class="jj-sec-head">
+        <span class="jj-eyebrow">品牌故事 / 随笔</span>
+        <h2 class="jj-h2" id="jj-story-title">影像之外，我们也写字</h2>
+        <p class="jj-sec-desc">三篇与近期内容呼应的短文，来自编辑与创作者的手记。</p>
+      </div>
+      <div class="jj-story-grid">
+        <article class="jj-story">
+          <span class="jj-story-date">2026 · 11 · 15</span>
+          <h3>为什么我们坚持给每支片子署名</h3>
+          <p>在一支三分半的短片背后，往往站着采收工、司机、灯光助理和一位不愿意出镜的酿酒师。署名不是形式，而是把影响力还给具体的人。</p>
+          <a class="jj-story-link" href="#jj-about">读全文</a>
+        </article>
+        <article class="jj-story">
+          <span class="jj-story-date">2026 · 11 · 09</span>
+          <h3>在县城拍酒，比在城市难在哪里</h3>
+          <p>没有现成的灯光团队，也找不到标准化的场地。但县城的夜晚有一种城市里没有的松弛，镜头只要不着急，它自己会走过来。</p>
+          <a class="jj-story-link" href="#jj-about">读全文</a>
+        </article>
+        <article class="jj-story">
+          <span class="jj-story-date">2026 · 10 · 31</span>
+          <h3>关于「适度」的一次内部讨论</h3>
+          <p>我们花了整整一个下午，讨论如何在片子里表达尽兴，又不越过理性的边界。最后的结论很朴素：多拍人，少拍量。</p>
+          <a class="jj-story-link" href="#jj-about">读全文</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="jj-section jj-section--dark" aria-labelledby="jj-review-title">
+    <div class="jj-wrap">
+      <div class="jj-sec-head">
+        <span class="jj-eyebrow" style="color:var(--jj-amber)">用户评价</span>
+        <h2 class="jj-h2" id="jj-review-title">社区的反馈，比任何宣传都真实</h2>
+        <p class="jj-sec-desc">以下内容来自站内留言与问卷，已获用户授权展示。</p>
+      </div>
+      <div class="jj-review-grid">
+        <div class="jj-review">
+          <div class="jj-review-stars">★★★★★</div>
+          <p class="jj-review-text">看了《雾散之前》之后，我专门去了一趟那个产区。片子没有夸张的配乐，反而让我记住了风穿过叶子的声音，很实在。</p>
+          <div class="jj-review-user"><span class="jj-ava" style="background:#e0a13a">陈</span><div><b>陈默</b><small>旅行摄影爱好者</small></div></div>
+        </div>
+        <div class="jj-review">
+          <div class="jj-review-stars">★★★★★</div>
+          <p class="jj-review-text">作为刚入门的人，风味对照卡那期帮我省了很多钱，没有乱买。希望以后能多一些这种不绕弯子的实用内容。</p>
+          <div class="jj-review-user"><span class="jj-ava" style="background:#8ea88a">许</span><div><b>许一诺</b><small>入坑半年</small></div></div>
+        </div>
+        <div class="jj-review">
+          <div class="jj-review-stars">★★★★☆</div>
+          <p class="jj-review-text">投稿流程比我预想的顺，收到反馈很快，还给了剪辑建议。唯一想提的是希望能有更多关于音效处理的教程。</p>
+          <div class="jj-review-user"><span class="jj-ava" style="background:#b8517a">罗</span><div><b>罗锦</b><small>社区创作者</small></div></div>
+        </div>
+        <div class="jj-review">
+          <div class="jj-review-stars">★★★★★</div>
+          <p class="jj-review-text">很喜欢器物那几期，安静、不吵。晚上加班回来看一支，情绪会慢慢降下来，像有人替你把房间的灯调暗了。</p>
+          <div class="jj-review-user"><span class="jj-ava" style="background:#6b7fae">吴</span><div><b>吴桐</b><small>设计从业者</small></div></div>
+        </div>
+        <div class="jj-review">
+          <div class="jj-review-stars">★★★★☆</div>
+          <p class="jj-review-text">城市系列是我每周必看，尤其喜欢那位夜行的作者。他不打扰别人，这一点很难得，现在太多镜头喜欢凑热闹。</p>
+          <div class="jj-review-user"><span class="jj-ava" style="background:#a68f76">周</span><div><b>周予安</b><small>内容策划</small></div></div>
+        </div>
+        <div class="jj-review">
+          <div class="jj-review-stars">★★★★★</div>
+          <p class="jj-review-text">家里长辈也在看，说这些讲酒的人不吵不闹，讲得清楚。一个官网能做到让两代人都愿意看，挺不容易的。</p>
+          <div class="jj-review-user"><span class="jj-ava" style="background:#8b939c">赵</span><div><b>赵之远</b><small>三代同堂的家庭用户</small></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 合作品牌 + FAQ -->
+  <section class="jj-section" id="jj-faq" aria-labelledby="jj-partner-title">
+    <div class="jj-wrap">
+      <div class="jj-sec-head">
+        <span class="jj-eyebrow">合作品牌 / 帮助</span>
+        <h2 class="jj-h2" id="jj-partner-title">与我们同行的伙伴，以及常见问题</h2>
+        <p class="jj-sec-desc">合作方向涵盖产区纪录、器物设计与内容共创，欢迎邮件联系。</p>
+      </div>
+
+      <div class="jj-partner-row" style="margin-bottom:44px">
+        <div class="jj-partner"><b>青崖酒庄</b><span>产区纪录合作</span></div>
+        <div class="jj-partner"><b>木与土工作室</b><span>器物设计合作</span></div>
+        <div class="jj-partner"><b>南屿影像社</b><span>联合制作</span></div>
+        <div class="jj-partner"><b>慢火工艺所</b><span>工艺内容顾问</span></div>
+        <div class="jj-partner"><b>城市夜游计划</b><span>线下活动共创</span></div>
+      </div>
+
+      <div class="jj-faq">
+        <details>
+          <summary>91酒色是一个什么样的平台？</summary>
+          <p>91酒色是专注于酒类文化与生活方式的视频品牌官方网站，内容以原创与授权影像为主，覆盖产区探索、酿造工艺、品鉴实例、器物美学、人物访谈、城市夜生活与居家小酌等方向，同时运营一个面向创作者的投稿社区。</p>
+        </details>
+        <details>
+          <summary>如何成为签约或合作创作者？</summary>
+          <p>你可以先通过页面上的投稿入口提交作品，编辑团队会在七个工作日内给出反馈。若内容方向与更新节奏符合长期合作要求，我们会发出进一步沟通邀请；未通过的投稿也会附上具体建议。</p>
+        </details>
+        <details>
+          <summary>投稿对画质和时长有什么要求？</summary>
+          <p>建议提供 1080p 以上、无水印的成片，时长不限。短于三分钟的片段也欢迎，但请在投稿说明中写清拍摄时间、地点与授权情况，涉及他人的画面需要获得出镜者同意。</p>
+        </details>
+        <details>
+          <summary>站内内容是否都可以转发分享？</summary>
+          <p>官方网站的内容可分享页面链接，日常使用中我们提供复制链接与社交平台分享入口。若是二次剪辑、商业使用或线下放映，需要提前取得书面授权，可在联系表单中说明用途。</p>
+        </details>
+        <details>
+          <summary>为什么会看到「风味笔记」这个功能？</summary>
+          <p>我们希望观众不只是点一个赞，而是留下具体的感受。你写下的笔记会进入该作品的词云，帮助创作者理解内容真正抵达了谁、抵达了什么情绪。</p>
+        </details>
+        <details>
+          <summary>品牌合作可以怎么谈？</summary>
+          <p>我们开放产区拍摄、器物联名与内容共创三种主要合作方式。请在联系表单中选择「品牌合作」，并简要说明品牌背景、时间窗口与希望共同完成的内容目标。</p>
+        </details>
+        <details>
+          <summary>搜索功能能搜到什么？</summary>
+          <p>目前支持按标题、创作者与题材关键词检索页面内已展示的内容。若结果不理想，可以尝试更具体的地点或工艺词，例如「海拔」「陶杯」「雨夜」。搜索结果会在页面内即时反馈。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系 -->
+  <section class="jj-section jj-section--tight" id="jj-contact" aria-labelledby="jj-contact-title">
+    <div class="jj-wrap">
+      <div class="jj-contact">
+        <div class="jj-contact-grid">
+          <div>
+            <h2 id="jj-contact-title">和我们一起，把这一杯拍完整</h2>
+            <p>无论是投稿、合作还是内容建议，我们都愿意认真读完。91酒色品牌官方团队常驻两地，编辑部与摄制组随时欢迎新的想法。</p>
+            <div class="jj-contact-actions">
+              <button class="jj-btn jj-btn--amber" type="button" data-jj-open="submit">前往投稿</button>
+              <button class="jj-btn jj-btn--ghost" type="button" data-jj-open="share">分享本页</button>
+              <button class="jj-btn jj-btn--ghost" type="button" data-jj-open="report">反馈问题</button>
+            </div>
+          </div>
+          <div class="jj-contact-info">
+            <div><b>品牌名称</b><span>91酒色 · 品牌视频门户</span></div>
+            <div><b>合作邮箱</b><span>studio@jiuse-brand.example</span></div>
+            <div><b>编缉部</b><span>每周一至周五 10:00 - 19:00</span></div>
+            <div><b>办公地点</b><span>城市影像中心 3 层 · 内容生态组</span></div>
+            <div><b>投稿周期</b><span>七个工作日内回复</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- 页脚 -->
+<footer class="jj-footer">
+  <div class="jj-wrap">
+    <div class="jj-footer-grid">
+      <div class="jj-footer-brand">
+        <div class="jj-logo" style="margin-bottom:16px">
+          <span class="jj-logo-mark">91</span>
+          <span class="jj-logo-text"><b>91酒色</b><small>JIU SE STUDIO</small></span>
+        </div>
+        <p>91酒色官方网站，是一个以酒类文化与生活方式为核心内容的视频品牌门户。我们坚持原创、正版与高清的内容标准，深耕垂直领域，持续运营创作者社区，希望让每一次举杯都被认真记录。</p>
+        <p style="color:#7f6a76;font-size:12px">本页所有影像均为品牌自制或经授权展示，图文信息以官方发布为准。</p>
+      </div>
+      <div>
+        <h4>浏览</h4>
+        <ul>
+          <li><a href="#jj-about">品牌故事</a></li>
+          <li><a href="#jj-feature">焦点内容</a></li>
+          <li><a href="#jj-videos">视频社区</a></li>
+          <li><a href="#jj-topics">专题企划</a></li>
+          <li><a href="#jj-creators">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><a href="#jj-contact">投稿入口</a></li>
+          <li><a href="#jj-news">企业动态</a></li>
+          <li><a href="#jj-faq">常见问题</a></li>
+          <li><a href="#jj-contact">品牌合作</a></li>
+          <li><a href="#jj-top">回到顶部</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <ul>
+          <li>内容生态组 · 品牌视频门户</li>
+          <li>合作邮箱：studio@jiuse-brand.example</li>
+          <li>持续运营中 · 每周三更</li>
+          <li>原创内容 3,280+ 支</li>
+          <li>社区创作者 168 位</li>
+        </ul>
+      </div>
+    </div>
+    <div class="jj-footer-bottom">
+      <span>© 2026 91酒色 官方网站 · 版权所有</span>
+      <span>品牌备案：JIU-SE-2026-1119 · 内容运营：91酒色内容生态组</span>
+      <span>理性饮酒，未成年人请勿饮酒</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast -->
+<div class="jj-toast" id="jjToast" role="status" aria-live="polite"></div>
+
+<!-- 通用弹窗 -->
+<div class="jj-modal-mask" id="jjModalMask" aria-hidden="true">
+  <div class="jj-modal" role="dialog" aria-modal="true" aria-labelledby="jjModalTitle">
+    <button class="jj-modal-close" type="button" aria-label="关闭弹窗" data-jj-close>×</button>
+    <h3 id="jjModalTitle">提示</h3>
+    <p id="jjModalDesc"></p>
+    <div id="jjModalBody"></div>
+  </div>
+</div>
+
+<!-- 回到顶部 -->
+<button class="jj-to-top" id="jjToTop" type="button" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById('jjBurger');
+  var mobileNav = document.getElementById('jjMobileNav');
+  if(burger && mobileNav){
+    burger.addEventListener('click', function(){
+      var open = burger.getAttribute('aria-expanded') === 'true';
+      burger.setAttribute('aria-expanded', String(!open));
+      mobileNav.classList.toggle('open', !open);
+    });
+    mobileNav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        burger.setAttribute('aria-expanded','false');
+        mobileNav.classList.remove('open');
+      });
+    });
+  }
+
+  /* ---------- Toast ---------- */
+  var toastEl = document.getElementById('jjToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 2200);
+  }
+
+  /* ---------- 弹窗 ---------- */
+  var mask = document.getElementById('jjModalMask');
+  var mTitle = document.getElementById('jjModalTitle');
+  var mDesc = document.getElementById('jjModalDesc');
+  var mBody = document.getElementById('jjModalBody');
+  var lastFocus = null;
+
+  function openModal(title, desc, bodyHtml){
+    if(!mask) return;
+    lastFocus = document.activeElement;
+    mTitle.textContent = title;
+    mDesc.textContent = desc || '';
+    mBody.innerHTML = bodyHtml || '';
+    mask.classList.add('show');
+    mask.setAttribute('aria-hidden','false');
+    document.body.style.overflow = 'hidden';
+    var firstFocusable = mask.querySelector('input, textarea, button');
+    if(firstFocusable) firstFocusable.focus();
+  }
+  function closeModal(){
+    if(!mask) return;
+    mask.classList.remove('show');
+    mask.setAttribute('aria-hidden','true');
+    document.body.style.overflow = '';
+    if(lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  if(mask){
+    mask.addEventListener('click', function(e){
+      if(e.target === mask) closeModal();
+    });
+    mask.querySelectorAll('[data-jj-close]').forEach(function(b){
+      b.addEventListener('click', closeModal);
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && mask.classList.contains('show')) closeModal();
+    });
+  }
+
+  /* 投稿弹窗 */
+  var submitHtml =
+    '<label for="jjSubName">你的称呼</label>' +
+    '<input id="jjSubName" type="text" placeholder="例如：小桌日常" maxlength="24">' +
+    '<label for="jjSubTitle">作品标题</label>' +
+    '<input id="jjSubTitle" type="text" placeholder="例如：雨夜里的那杯热酒" maxlength="40">' +
+    '<label for="jjSubDesc">一句话说明</label>' +
+    '<textarea id="jjSubDesc" placeholder="拍摄时间、地点与想表达的内容" maxlength="180"></textarea>' +
+    '<button class="jj-btn jj-btn--primary jj-modal-submit" type="button" id="jjSubSend">提交投稿信息</button>';
+
+  /* 分享弹窗 */
+  var currentUrl = 'https://jiuse-brand.example/';
+  var shareHtml =
+    '<div class="jj-share-row">' +
+    '<button type="button" data-jj-share="微信">微信</button>' +
+    '<button type="button" data-jj-share="微博">微博</button>' +
+    '<button type="button" data-jj-share="QQ">QQ</button>' +
+    '<button type="button" data-jj-share="复制链接">复制链接</button>' +
+    '</div>' +
+    '<p style="font-size:13px;margin-bottom:0">把 91酒色 的这页影像档案，交给同样喜欢安静看片的人。</p>';
+
+  /* 反馈弹窗 */
+  var reportHtml =
+    '<label for="jjRepType">反馈类型</label>' +
+    '<input id="jjRepType" type="text" placeholder="内容建议 / 页面问题 / 版权说明" maxlength="30">' +
+    '<label for="jjRepDesc">详细描述</label>' +
+    '<textarea id="jjRepDesc" placeholder="请描述你遇到的问题或建议" maxlength="200"></textarea>' +
+    '<button class="jj-btn jj-btn--primary jj-modal-submit" type="button" id="jjRepSend">提交反馈</button>';
+
+  /* 作者信息弹窗 */
+  function openCreator(name, field, works, fans){
+    openModal(name, '创作者档案',
+      '<div style="display:flex;align-items:center;gap:14px;margin-bottom:14px">' +
+      '<span class="jj-ava" style="width:52px;height:52px;font-size:19px">' + name.charAt(0) + '</span>' +
+      '<div><b style="display:block;font-size:15px;color:#1a1220">' + field + '</b>' +
+      '<small style="color:#7c6b74;font-size:12.5px">91酒色 合作创作者</small></div></div>' +
+      '<div style="display:flex;gap:26px;font-size:13px;color:#7c6b74;padding-top:12px;border-top:1px dashed #e5d6c4">' +
+      '<span><b style="display:block;font-size:18px;color:#4a2340">' + works + '</b>作品</span>' +
+      '<span><b style="display:block;font-size:18px;color:#4a2340">' + fans + '</b>关注</span>' +
+      '<span><b style="display:block;font-size:18px;color:#4a2340">官方</b>认证</span></div>' +
+      '<button class="jj-btn jj-btn--primary jj-modal-submit" type="button" data-jj-close>知道了</button>');
+    mask.querySelectorAll('[data-jj-close]').forEach(function(b){
+      b.addEventListener('click', closeModal);
+    });
+  }
+
+  /* 事件委托：打开弹窗 */
+  document.addEventListener('click', function(e){
+    var trigger = e.target.closest('[data-jj-open]');
+    if(trigger){
+      var type = trigger.getAttribute('data-jj-open');
+      if(type === 'submit'){
+        openModal('投稿入口', '填写基本信息后，编辑团队会在七个工作日内给出反馈。', submitHtml);
+        var send = document.getElementById('jjSubSend');
+        if(send){
+          send.addEventListener('click', function(){
+            var n = document.getElementById('jjSubName').value.trim();
+            var t = document.getElementById('jjSubTitle').value.trim();
+            if(!n || !t){ showToast('请先填写称呼与作品标题'); return; }
+            closeModal();
+            showToast('投稿信息已记录，感谢你的信任');
+          });
+        }
+      } else if(type === 'share'){
+        openModal('分享本页', '选择一个渠道，或复制链接发送给朋友。', shareHtml);
+        mask.querySelectorAll('[data-jj-share]').forEach(function(b){
+          b.addEventListener('click', function(){
+            var ch = b.getAttribute('data-jj-share');
+            if(ch === '复制链接'){
+              copyText(currentUrl);
+            } else {
+              closeModal();
+              showToast('已准备分享到' + ch + '，请在新窗口完成');
+            }
+          });
+        });
+      } else if(type === 'report'){
+        openModal('反馈问题', '你的描述会直接进入内容生态组的待办清单。', reportHtml);
+        var rep = document.getElementById('jjRepSend');
+        if(rep){
+          rep.addEventListener('click', function(){
+            var d = document.getElementById('jjRepDesc').value.trim();
+            if(!d){ showToast('请先填写详细描述'); return; }
+            closeModal();
+            showToast('反馈已提交，我们会尽快处理');
+          });
+        }
+      }
+      return;
+    }
+
+    /* 作者卡片 */
+    var cre = e.target.closest('[data-jj-creator]');
+    if(cre){
+      var parts = cre.getAttribute('data-jj-creator').split('|');
+      openCreator(parts[0], parts[1], parts[2], parts[3]);
+    }
+  });
+
+  /* 复制 */
+  function copyText(text){
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        closeModal();
+        showToast('链接已复制到剪贴板');
+      }).catch(function(){
+        closeModal();
+        showToast('复制失败，请手动选择链接');
+      });
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try{ document.execCommand('copy'); showToast('链接已复制到剪贴板'); }
+      catch(err){ showToast('复制失败，请手动选择链接'); }
+      document.body.removeChild(ta);
+      closeModal();
+    }
+  }
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.addEventListener('click', function(e){
+    var likeBtn = e.target.closest('[data-jj-like]');
+    if(likeBtn){
+      e.preventDefault();
+      var countEl = likeBtn.querySelector('[data-jj-count]');
+      var on = likeBtn.classList.toggle('on');
+      if(countEl){
+        var raw = countEl.textContent.replace(/[^\d.]/g,'');
+        var num = parseFloat(raw) || 0;
+        var isK = /k/i.test(countEl.textContent);
+        num = on ? num + 1 : Math.max(0, num - 1);
+        countEl.textContent = isK ? (num.toFixed(1) + 'k') : String(Math.round(num));
+      }
+      showToast(on ? '已点赞，感谢你的喜欢' : '已取消点赞');
+      return;
+    }
+    var favBtn = e.target.closest('[data-jj-fav]');
+    if(favBtn){
+      e.preventDefault();
+      var favOn = favBtn.classList.toggle('on');
+      showToast(favOn ? '已加入收藏，可稍后在个人页查看' : '已移出收藏');
+    }
+  });
+
+  /* ---------- 题材筛选 ---------- */
+  var filterBox = document.getElementById('jjFilter');
+  var cardGrid = document.getElementById('jjCardGrid');
+  function applyFilter(cat){
+    if(!cardGrid) return;
+    cardGrid.querySelectorAll('[data-jj-cat]').forEach(function(card){
+      var match = (cat === 'all') || card.getAttribute('data-jj-cat') === cat;
+      card.style.display = match ? '' : 'none';
+    });
+  }
+  if(filterBox){
+    filterBox.addEventListener('click', function(e){
+      var b = e.target.closest('button[data-jj-filter]');
+      if(!b) return;
+      filterBox.querySelectorAll('button').forEach(function(x){ x.classList.remove('active'); });
+      b.classList.add('active');
+      applyFilter(b.getAttribute('data-jj-filter'));
+      showToast('已筛选：' + b.textContent.trim());
+    });
+  }
+
+  /* ---------- 搜索反馈 ---------- */
+  function doSearch(input){
+    if(!input) return;
+    var kw = (input.value || '').trim();
+    if(!kw){
+      showToast('请输入关键词，例如「产区」「陶杯」「雨夜」');
+      return;
+    }
+    var cards = document.querySelectorAll('#jjCardGrid [data-jj-cat]');
+    var hits = 0;
+    cards.forEach(function(card){
+      var text = card.textContent + ' ' + (card.getAttribute('data-jj-cat') || '');
+      var match = text.indexOf(kw) > -1;
+      card.style.display = match ? '' : 'none';
+      if(match) hits++;
+    });
+    if(filterBox){
+      filterBox.querySelectorAll('button').forEach(function(x){ x.classList.remove('active'); });
+    }
+    if(hits > 0){
+      showToast('找到 ' + hits + ' 条与「' + kw + '」相关的视频');
+      var anchor = document.getElementById('jj-videos');
+      if(anchor) anchor.scrollIntoView({behavior:'smooth'});
+    } else {
+      showToast('暂未找到「' + kw + '」，可尝试更具体的地点或器物词');
+    }
+  }
+  var searchBtn = document.getElementById('jjSearchBtn');
+  var searchInput = document.getElementById('jjSearchInput');
+  if(searchBtn && searchInput){
+    searchBtn.addEventListener('click', function(){ doSearch(searchInput); });
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(searchInput); }
+    });
+  }
+  document.querySelectorAll('[data-jj-search-go]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var wrap = btn.closest('.jj-search');
+      doSearch(wrap ? wrap.querySelector('input') : null);
+    });
+  });
+  document.querySelectorAll('[data-jj-search]').forEach(function(inp){
+    inp.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(inp); }
+    });
+  });
+
+  /* ---------- 回到顶部 ---------- */
+  var toTop = document.getElementById('jjToTop');
+  if(toTop){
+    window.addEventListener('scroll', function(){
+      if(window.scrollY > 640) toTop.classList.add('show');
+      else toTop.classList.remove('show');
+    }, {passive:true});
+    toTop.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* ---------- 数字滚动（首屏数据） ---------- */
+  var statsDone = false;
+  function animateStats(){
+    if(statsDone) return;
+    statsDone = true;
+    document.querySelectorAll('.jj-hero-stats .jj-stat b').forEach(function(el){
+      var text = el.textContent;
+      var target = parseFloat(text.replace(/[^\d.]/g,'')) || 0;
+      var suffix = text.replace(/[\d.,]/g,'');
+      var start = null;
+      var dur = 1200;
+      function step(ts){
+        if(!start) start = ts;
+        var p = Math.min((ts - start) / dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        var val = Math.round(target * eased);
+        el.textContent = val.toLocaleString('zh-CN') + suffix;
+        if(p < 1) requestAnimationFrame(step);
+      }
+      el.textContent = '0' + suffix;
+      requestAnimationFrame(step);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var statNode = document.querySelector('.jj-hero-stats');
+    if(statNode){
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if(en.isIntersecting){ animateStats(); io.disconnect(); }
+        });
+      }, {threshold:.3});
+      io.observe(statNode);
+    }
+  } else {
+    animateStats();
+  }
+
+})();
+</script>
+</body>
+                                              </html>
